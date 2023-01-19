@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta property="og:url" content="http://www.golfscorecards.app.com/"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Golf Scorecards App">
+    <meta property="og:description" content="Golf Scorecards App">
+    <meta property="og:image" content="https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- google font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!-- animations -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- end of animations -->
+    
+    <title>Golf Scorecards App</title>
+</head>
+
+<body>
+
+
+    <div class="mainPicture">
+      
+        <div class="mainTopnumber">
+
+            <!-- top nav bar -->
+            <div class="topnav">
+
+                <div>
+                    <a class="aTagTopNavDivLogo" href="index.html">
+                        Golf Scorecards App
+                    </a>
+                </div>
+
+                <!-- <div > -->
+
+                <!-- <a href="/">Home</a> -->
+                <!-- <a ng-if='ctrl.user' class="aTagTopNav" href="/scorecards">My Scorecards</a> -->
+                <!-- <a class="aTagTopNav" onclick="openWeatherNav()">Weather</a> -->
+
+                <!-- three lines icon -->
+                <!-- <a class="threeLines" onclick="openMenuNav()">&#9776;</a> -->
+                <!-- </div> -->
+            </div>
+
+            <!-- end of top nav bar -->
+
+<div class="headerDescriptionShareQR">
+        <div class="headerDescriptionShareQRleft">
+                <h1 class="digitalScorecardFont" style="padding-top: 55px; margin-top: 50px;"> Enter Golf Scores Below</h1>
+        </div>
+        <div class="headerDescriptionShareQRright">
+                <h2 class="digitalScorecardFont" style="padding-top: 40px; margin-top: 50px;">    </h2>
+                <div class="QRcodeSmall" style="margin: auto; "></div>
+        </div>
+
+</div>
+            
+            <h3 class="digitalScorecardFont">Front 9</h3>
+
+            <!-- start of Front 9 scorecard div -->
+            <div class="scorecardWrapperBox">
+
+                <div class="clickableSum">
+
+
+                    <div class="horizontalScorecardboxDetails">
+                        <div class="horizontalScorecardboxName">
+                            <h5>Name:</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 1</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 2</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 3</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 4</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 5</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 6</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 7</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 8</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 9</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h6>Total</h6>
+                        </div>
+                    </div>
+
+                    <!-- <div class="horizontalScorecardboxDetails">
+            <div class="horizontalScorecardboxName">Yardage</div>
+            <div class="horizontalScorecardbox">100</div>
+            <div class="horizontalScorecardbox">200</div>
+            <div class="horizontalScorecardbox">300</div>
+            <div class="horizontalScorecardbox">400</div>
+            <div class="horizontalScorecardbox">500</div>
+            <div class="horizontalScorecardbox">600</div>
+            <div class="horizontalScorecardbox">700</div>
+            <div class="horizontalScorecardbox">800</div>
+            <div class="horizontalScorecardbox">900</div>
+        </div>
+        <div class="horizontalScorecardboxDetails">
+            <div class="horizontalScorecardboxName">Par</div>
+            <div class="horizontalScorecardbox">3</div>
+            <div class="horizontalScorecardbox">3</div>
+            <div class="horizontalScorecardbox">4</div>
+            <div class="horizontalScorecardbox">4</div>
+            <div class="horizontalScorecardbox">5</div>
+            <div class="horizontalScorecardbox">3</div>
+            <div class="horizontalScorecardbox">5</div>
+            <div class="horizontalScorecardbox">5</div>
+            <div class="horizontalScorecardbox">3</div>
+        </div> -->
+
+                    <!-- end of Hole#, Yardage, Par  -->
+
+
+
+                    <!--////////////////// row 1 ////// -->
+
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row1name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row1" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total" name="total" />
+                            </div>
+
+                            <!-- <a class="buttonForSum" href="javascript:sumInputs()"> <button>Sum</button> </a> -->
+
+                        </div>
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+
+                    <!-- Row 2   ///////////////////// -->
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row2name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row2" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total2" name="total2" />
+                            </div>
+
+                            <!-- <a href="javascript:sumInputs2()"> <button>Sum</button> </a> -->
+
+                        </div>
+
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+                    <!-- Row 3   ///////////////////// -->
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row3name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row3" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total3" name="total3" />
+                            </div>
+
+                            <!-- <a href="javascript:sumInputs3()"> <button>Sum</button> </a> -->
+
+                        </div>
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+
+
+                    <!-- Row 4   ///////////////////// -->
+
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row4name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row4" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total4" name="total4" />
+                            </div>
+
+                            <!-- <a href="javascript:sumInputs4()"> <button>Sum</button> </a> -->
+
+                        </div>
+                        <!-- end of row 4 -->
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+                    <a href="javascript:resetScorecard()">
+                        <button>Clear Scorecard</button>
+                    </a>
+                    <!-- end of clear Scorecard -->
+
+                </div>
+                <!-- end of clickable sum  -->
+            </div>
+            <!-- end of ScorecardWrapperBox -->
+
+
+
+
+            <h3 class="digitalScorecardFont">Back 9</h3>
+
+            <!-- start of Back 9 scorecard div -->
+            <div class="scorecardWrapperBox">
+
+                <div class="clickableSum">
+
+
+
+                    <div class="horizontalScorecardboxDetails">
+                        <div class="horizontalScorecardboxName">
+                            <h5>Name</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 10</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 11</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 12</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 13</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 14</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 15</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 16</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 17</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h5># 18</h5>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h6>Total ===</h6>
+                        </div>
+                        <div class="horizontalScorecardbox">
+                            <h6>Grand Total ===</h6>
+                        </div>
+                    </div>
+
+                    <!-- <div class="horizontalScorecardboxDetails">
+                        <div class="horizontalScorecardboxName">Yardage</div>
+                        <div class="horizontalScorecardbox">100</div>
+                        <div class="horizontalScorecardbox">200</div>
+                        <div class="horizontalScorecardbox">300</div>
+                        <div class="horizontalScorecardbox">400</div>
+                        <div class="horizontalScorecardbox">500</div>
+                        <div class="horizontalScorecardbox">600</div>
+                        <div class="horizontalScorecardbox">700</div>
+                        <div class="horizontalScorecardbox">800</div>
+                        <div class="horizontalScorecardbox">900</div>
+                </div>
+                <div class="horizontalScorecardboxDetails">
+                        <div class="horizontalScorecardboxName">Par</div>
+                        <div class="horizontalScorecardbox">3</div>
+                        <div class="horizontalScorecardbox">3</div>
+                        <div class="horizontalScorecardbox">4</div>
+                        <div class="horizontalScorecardbox">4</div>
+                        <div class="horizontalScorecardbox">5</div>
+                        <div class="horizontalScorecardbox">3</div>
+                        <div class="horizontalScorecardbox">5</div>
+                        <div class="horizontalScorecardbox">5</div>
+                        <div class="horizontalScorecardbox">3</div>
+                </div> -->
+
+                    <!-- end of Hole#, Yardage, Par  -->
+
+
+
+                    <!--////////////////// row 5 ////// -->
+
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row5name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row5" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total5" name="total5" />
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+                                <input class="horizontalInput" type="text" id="grandtotal5" name="total8" />
+                            </div>
+
+                            <!-- <a class="buttonForSum" href="javascript:sumInputs()"> <button>Sum</button> </a> -->
+
+                        </div>
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+
+                    <!-- Row 6   ///////////////////// -->
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row6name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row6" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total6" name="total6" />
+                            </div>
+                            <div class="horizontalScorecardbox">
+                                <input class="horizontalInput" type="text" id="grandtotal6" name="total8" />
+                            </div>
+
+                            <!-- <a href="javascript:sumInputs2()"> <button>Sum</button> </a> -->
+
+                        </div>
+
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+                    <!-- Row 7   ///////////////////// -->
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row7name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row7" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total7" name="total7" />
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+                                <input class="horizontalInput" type="text" id="grandtotal7" name="total8" />
+                            </div>
+
+
+                            <!-- <a href="javascript:sumInputs3()"> <button>Sum</button> </a> -->
+
+                        </div>
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+
+
+                    <!-- Row 8   ///////////////////// -->
+
+                    <a class="flexlinkdisplay" href="javascript:sumAllRows()">
+
+                        <div class="horizontalScorecard">
+                            <div class="horizontalScorecardboxName"> <input class="horizontalInput" type="text"
+                                    name="row8name" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox"> <input class="horizontalInput" type="number"
+                                    name="row8" id="inputBox" /><br>
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+
+                                <input class="horizontalInput" type="text" id="total8" name="total8" />
+                            </div>
+
+                            <div class="horizontalScorecardbox">
+                                <input class="horizontalInput" type="text" id="grandtotal8" name="total8" />
+
+
+                            </div>
+
+                            <!-- <a href="javascript:sumInputs4()"> <button>Sum</button> </a> -->
+
+                        </div>
+                        <!-- end of row 4 -->
+                    </a>
+                    <!-- end of sumAllRows a-tag link  -->
+
+
+
+                    <a href="javascript:resetScorecard()">
+                        <button>Clear Scorecard</button>
+                    </a>
+                    <!-- end of clear Scorecard -->
+                    <br>
+                    <br>
+                </div>
+                <!-- end of clickable sum  -->
+            </div>
+            <!-- end of ScorecardWrapperBox -->
+
+
+
+
+
+            <br><br><br>
+            <!-- Start of QR code sharing -->
+            <div class="scanQRBox">
+                <h2 style="width: 200px; margin: auto auto; height:auto; text-align: center; color:black">Scan to Share
+                    Scorecard </h2>
+                <br><br>
+
+                <div class="QRcode" style="margin: auto; "></div>
+
+            </div>
+
+            <!-- <div class="scorecardlinkWrapper">
+        <a href="/DigitalScorecard">
+                <div class="scorecardlink">
+                        <br><br><br>
+                        <h2 class="fontcolorwhite">Share QR code - Link to Scorecards Here: </h2>
+                        <h4 class="webLinkscorecard">www.golfscorecards.app.com/DigitalScorecard</h4>
+                </div>
+        </a>
+</div> -->
+
+
+
+
+
+            <!-- <div>
+            <a href="/">
+                <button class="IndexScorecardsubmitAddBtnWelcome">
+                   Return to Home Page
+                </button>
+            </a>
+        </div> -->
+
+        </div>
+        <!-- end of mainTopnumber -->
+
+    </div>
+    <!-- end of main picture -->
+
+    <footer>
+        <!-- <div class="footerdivparent"> -->
+        <div class="footerDiv">
+            <!-- <p>Built and Designed by : -->
+    
+                <!-- <a class="footerLink" href="http://www.peterking.info">www.peterking.info</a> -->
+    
+            </p>
+    
+            <p>golf.scorecards.app@gmail.com</p>
+    
+        </div>
+    
+        <!-- start of back button on botton bar -->
+        <!-- <a class="smallpicAtag" href="/digitalscorecard">
+            <div class="bottomBar">
+            </div>
+        </a> -->
+        <!-- end of start of back button on botton bar -->
+    
+<!-- start of privacy and data compliance -->
+<!-- SideNavCookies  -->
+<div class="displaySquares" ng-hide="ctrl.user">
+        <div id="mySidenavCookies" class="sidenavCookies">
+
+                <div class="bottomCookiePolicyPopup">
+
+                        <div class="topOfPopUp">
+
+                                <h5>
+                                        <a class="footerLink" style="margin: 0;" href="privacypolicy.html" target="_blank"
+                                                rel="noopener noreferrer">View Cookie Policy</a>
+                                        <br><br>
+                                        Golf Scorecards App uses cookies to improve your experience. Our
+                                        Cookie Policy provides more information and explains how to change your account
+                                        settings.<br><br>
+                                </h5>
+                        </div>
+                        <!-- end of topOfPopUp -->
+
+
+                        <div class="bottomOfPopUp">
+
+
+                                <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                                        onclick="closeNavCookies()">Accept</button>
+
+                                <br><br><br><br>
+
+                                <!-- <button class="IndexScorecardsubmitAddBtn">
+                    <a style="margin-left:25%; margin-right: 35%;" href="http://www.google.com/">Reject</a>
+                </button>
+                </a> -->
+                        </div>
+                        <!-- end of bottomOfPopUp -->
+
+    
+    
+    </footer>
+
+</body>
