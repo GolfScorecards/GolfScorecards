@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <!-- animations -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
     <!-- end of animations -->
     
     <title>Golf Scorecards App</title>
@@ -807,17 +807,19 @@
 <div class="displaySquares" ng-hide="ctrl.user">
         <div id="mySidenavCookies" class="sidenavCookies">
 
+                <div class="closeXButton" onclick="closeNavCookies()"></div>
+
                 <div class="bottomCookiePolicyPopup">
 
                         <div class="topOfPopUp">
 
                                 <h5>
-                                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
-                                                rel="noopener noreferrer">View Cookie Policy</a>
-                                        <br><br>
+                                
                                         Golf Scorecards App uses cookies to improve your experience. Our
                                         Cookie Policy provides more information and explains how to change your account
                                         settings.<br><br>
+                                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
+                                                rel="noopener noreferrer">View Cookie Policy</a>
                                 </h5>
                         </div>
                         <!-- end of topOfPopUp -->
