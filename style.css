@@ -333,7 +333,7 @@ color: white;
     border-style: solid;
     border-color: grey;
     border-radius: 100%;
-    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%);
+    background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 45%, white 45%, white 55%, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 45%, white 45%, white 55%, transparent 55%, transparent 100%);
     background-color: grey;
 }
 
@@ -1187,7 +1187,7 @@ footer {
 
 .QRcode {
     /* background-color: green; */
-    background-image: url(QR-code-to-Golfer-Scorecards.png);
+    background-image: url(QR-code-to-Golfer-Scorecards2.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 174px;
