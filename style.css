@@ -173,7 +173,7 @@ main {
     box-shadow: 1px 1px 3px black;
     /* left: 0; */
     /* background-color: #DFDFDF; */
-    background-color: #2274A5;
+    
     /* background-color: #9CC5A1; */
     /* background-color: #A9A9A9; */
     overflow-x: hidden;
@@ -187,7 +187,7 @@ a {
 .topnav a {
     display: inline-block;
     text-align: left;
-    width: auto;
+    width: 100%;
     color: white;
 }
 
@@ -922,10 +922,10 @@ label:before {
 }
 
 
-
 .aTagTopNavDivLogo {
     font-family: 'Arial';
     color: white;
+    background-color: #2274A5;
     padding: 15.5px 5px;
 }
 
