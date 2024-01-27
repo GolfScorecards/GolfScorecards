@@ -199,6 +199,14 @@ a {
     color: white;
 }
 
+.aTagTopNavDivLogoSubscribe {
+    font-family: 'Arial';
+        padding: 15.5px 5px;
+        font-size: 15px;
+        background-color: rgb(71, 216, 71);
+        
+}
+
 .threeLines {
     padding: 5px 16px;
     font-size: 30px;
