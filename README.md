@@ -1,6 +1,6 @@
-# golfappycards
+# golfAppycards
 
-Link to golfappycards
+Link to golfAppycards
 
 https://www.golfappycards.com/
 
