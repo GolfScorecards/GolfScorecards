@@ -202,12 +202,9 @@ a {
 
 
 .aTagTopNavDivLogoSubscribe {
-    font-family: 'Arial';
+        font-family: 'Arial';
         padding: 15.5px 5px;
         font-size: 15px;
-        /* background-color: #A5D8FF; */
-        /* background-color: #3BB273; */
-        /* background-color: #54DEFD; */
         background-color: #A5CCD1;
 }
 
@@ -398,13 +395,22 @@ input[type=password] {
 }
 
 .digitalScorecardFont {
+    font-family: arial;
     color: white;
     margin-left: 10px;
-    padding-top: 2px;
     margin-top: 50px; 
     margin-bottom: 10px;
 }
+
 .digitalScorecardFont9 {
+    color: white;
+    margin-left: 10px;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.digitalScorecardBack9 {
     color: white;
     margin-left: 10px;
     padding-top: 2px;
@@ -940,7 +946,7 @@ label:before {
     font-family: 'Arial';
     color: white;
     background-color: #2274A5;
-    padding: 15.5px 5px;
+    padding: 10px 10px;
 }
 
 #mySidenavMenu {
