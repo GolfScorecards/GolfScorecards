@@ -203,8 +203,10 @@ a {
     font-family: 'Arial';
         padding: 15.5px 5px;
         font-size: 15px;
-        background-color: rgb(71, 216, 71);
-        
+        /* background-color: #A5D8FF; */
+        /* background-color: #3BB273; */
+        /* background-color: #54DEFD; */
+        background-color: #A5CCD1;
 }
 
 .threeLines {
@@ -1208,8 +1210,8 @@ footer {
     background-image: url(QR-code-to-Golfer-Scorecards2.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 124px;
-        height: 120px;
+        width: 62px;
+        height: 60px;
         margin: 20px 20px;
         border-radius: 8px;
 }
