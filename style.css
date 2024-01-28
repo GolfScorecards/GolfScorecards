@@ -199,6 +199,8 @@ a {
     color: white;
 }
 
+
+
 .aTagTopNavDivLogoSubscribe {
     font-family: 'Arial';
         padding: 15.5px 5px;
@@ -398,6 +400,16 @@ input[type=password] {
 .digitalScorecardFont {
     color: white;
     margin-left: 10px;
+    padding-top: 2px;
+    margin-top: 50px; 
+    margin-bottom: 10px;
+}
+.digitalScorecardFont9 {
+    color: white;
+    margin-left: 10px;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .scanQRBox {
