@@ -80,7 +80,7 @@ main {
 }
 
 .IndexScorecardsubmitAddBtn {
-    width: 50%;
+    width: 80%;
     height: 40px;
     padding: 10px 20px;
     margin: 8px 5px 5px 5px;
@@ -202,7 +202,7 @@ a {
         font-family: 'Franklin Gothic large', 'Arial bold', Arial, sans-serif;
         font-weight: bold;
         padding: 15px 5px;
-        font-size: 16px;
+        font-size: 5px;
         /* background-color: #A5CCD1; */
         background-color: #9ED0E6;
 }
@@ -356,7 +356,7 @@ a {
     text-align: center;
     /* padding: 14px 16px; */
     text-decoration: none;
-    font-size: 26px;
+    font-size: 20px;
     font-style:italic;
 }
 
@@ -392,29 +392,41 @@ input[type=password] {
     box-sizing: border-box;
 
 }
-
-.digitalScorecardFont {
-    font-family: arial;
-    color: white;
-    margin-left: 10px;
-    margin-top: 60px; 
-    margin-bottom: 10px;
+.mainBenefitSlogan {
+    display: inline-block;
+margin-top: 100px;
+height: 300px;
 }
 
-.digitalScorecardFont9 {
+.digitalScorecardFront {
+    font-family: arial;
     color: white;
-    margin-left: 10px;
-    padding-top: 2px;
-    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px; 
+    margin-bottom: 0px;
+    padding-top: 5px;
+    height: auto;
+}
+
+.digitalScorecardFront9 {
+    background-color: grey;
+    color: white;
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .digitalScorecardBack9 {
-    color: white;
-    margin-left: 10px;
-    padding-top: 2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    background-color: grey;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
 }
 
 .scanQRBox {
@@ -1235,16 +1247,21 @@ footer {
 
 
 .headerDescriptionShareQR {
+    margin-top:0px;
+    margin-bottom: 20px;
     display: flex;
     width: 100%;
 }
 
 .headerDescriptionShareQRleft {
+    margin-top: 20px;
+    padding-left: 10px;
     width: 50%;
     /* background-color: #ccc; */
 }
 
 .headerDescriptionShareQRright {
+    margin-top: 20px;
     width: 50%;
     text-align: center;
     /* background-color: #a3c2a7; */
@@ -1283,6 +1300,19 @@ footer {
 
 } */
 
+.scorecardLogoGrey {
+    background-color: grey;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
 
 .flexlinkdisplay {
     display: flex;
@@ -1324,7 +1354,9 @@ footer {
 
 
 .scorecardWrapperBox {
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     height: 250px;
 }
 
