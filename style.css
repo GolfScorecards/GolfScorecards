@@ -81,7 +81,7 @@ main {
 
 .IndexScorecardsubmitAddBtn {
     width: 80%;
-    height: 40px;
+    height: 50px;
     padding: 10px 20px;
     margin: 8px 5px 5px 5px;
     background: #2274A5;
@@ -89,6 +89,18 @@ main {
     font-size: 1em;
     color: white;
     box-shadow: 2px 2px 6px #000000;
+}
+
+.IndexScorecardsubmitAddBtnLogo {
+    width: 80%;
+        height: 50px;
+        padding: 0px 20px;
+        margin: 8px 5px 5px 5px;
+        background: #2274A5;
+        border: none;
+        font-size: 1em;
+        color: white;
+        box-shadow: 2px 2px 6px #000000;
 }
 
 .IndexScorecardsubmitAddBtn1 {
