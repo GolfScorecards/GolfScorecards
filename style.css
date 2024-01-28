@@ -199,7 +199,8 @@ a {
 }
 
 .aTagTopNavDivLogoSubscribe {
-        font-family: 'Arial';
+        font-family: 'Franklin Gothic large', 'Arial bold', Arial, sans-serif;
+        
         padding: 15px 5px;
         font-size: 16px;
         background-color: #A5CCD1;
