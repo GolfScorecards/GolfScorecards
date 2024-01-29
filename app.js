@@ -360,13 +360,16 @@ function closeNavCookies() {
     console.log("Closed Cookie Policy")
 }
 
+// logoSubscribeButton
+function openSubscribePopUp() {
+    document.getElementById("logoSubscribeButton1").style.display = "block";
+    console.log("Opened logoSubscribePopUp")
+}
+function closeSubscribePopUp() {
+    document.getElementById("logoSubscribeButton1").style.display = "none";
+    console.log("Closed logoSubscribePopUp")
+}
 
-// function openNavCookiesPage() {
-//     document.getElementById("mySidenavCookiesPage").style.width = "95%";
-// }
-// function closeNavCookiesPage() {
-//     document.getElementById("mySidenavCookiesPage").style.width = "0";
-// }
 
 
 

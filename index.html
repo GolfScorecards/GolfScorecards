@@ -51,7 +51,7 @@
             <div class="topnav">
 
                 <div>
-                    <a class="aTagTopNavDivLogo" style="font-size: 22px;"href="index.html">
+                    <a class="aTagTopNavDivLogo" style="font-size: 22px; font-family: dancing-script; "href="index.html">
                         golfAppycards
                         
                     </a>
@@ -88,7 +88,7 @@
                 
                 <h4 class="digitalScorecardFront">
                 <div>
-                        <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtnLogo" onclick="closeNavCookies()">Upload logo + Subscribe</button></div>
+                        <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtnLogo" onclick="openSubscribePopUp()">Upload logo + Subscribe</button></div>
                         <!-- <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn" onclick="closeNavCookies()">Subscribe</button> -->
                 <br>
                 </h4>
@@ -835,16 +835,10 @@
                  
         </div>
     
-        <!-- start of back button on botton bar -->
-        <!-- <a class="smallpicAtag" href="/digitalscorecard">
-            <div class="bottomBar">
-            </div>
-        </a> -->
-        <!-- end of start of back button on botton bar -->
     
 <!-- start of privacy and data compliance -->
 <!-- SideNavCookies  -->
-<div class="displaySquares" ng-hide="ctrl.user">
+<div class="displaySquares">
         <div id="mySidenavCookies" class="sidenavCookies">
 
                 <div class="closeXButton" onclick="closeNavCookies()"></div>
@@ -858,8 +852,7 @@
                                         <h3>golfAppycards LLC</h3> Uses cookies to improve your experience. Our
                                         Cookie Policy provides more information and explains how to change your account
                                         settings.<br><br>
-                                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
-                                                rel="noopener noreferrer">View Cookie Policy</a>
+                                        
                                 </h5>
                         </div>
                         <!-- end of topOfPopUp -->
@@ -868,19 +861,64 @@
                         <div class="bottomOfPopUp">
 
 
-                                <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
-                                        onclick="closeNavCookies()">Accept</button>
+                        <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                        onclick="closeNavCookies()">Accept</button>
+                                <br>
+                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
+                        rel="noopener noreferrer">Customize</a>
+                                
+                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
+                        rel="noopener noreferrer"> Reject</a>
+                                
+                        <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
+                        rel="noopener noreferrer">View Cookie Policy</a>
+                                <br>
 
-                                <br><br><br><br>
-
-                                <!-- <button class="IndexScorecardsubmitAddBtn">
-                    <a style="margin-left:25%; margin-right: 35%;" href="http://www.google.com/">Reject</a>
-                </button>
-                </a> -->
                         </div>
                         <!-- end of bottomOfPopUp -->
+                </div>
+        </div>  
+</div>    
 
-    
+    <!-- start of logoSubscribeButton -->
+<div class="displaySquaresPopUp">
+        <div id="logoSubscribeButton1" class="logoSubscribePopUp">
+
+                <div class="closeXButton" onclick="closeSubscribePopUp()"></div>
+
+                <div class="bottomCookiePolicyPopup">
+
+                        <div class="topOfPopUp">
+
+                                <div class="subscriptionPopUpWindow">
+
+                                <h4 style="margin:0%">Subscribe Here Soon</h4>
+                                        <br>
+                                <div>(1) Email your logo to: golfAppycards@gmail.com</div>
+                                        <br>
+                                <div>(2) $899 per year subscription</div>
+                                <div class="paymentOptions"></div>
+                                        
+                                        
+                                </div>
+                        </div>
+                        <div class="bottomOfPopUp">
+                        
+                        <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                                onclick="closeSubscribePopUp()">After both steps are complete <br> click here</button>
+                        <div class="termsPaymentPopup">*Please allow 24hrs for processing. <br> **An order confirmation and your digital scorecard will be sent to your email.</div>
+                                
+                
+                        </div>
+
+                        <!-- end of topOfPopUp -->
+
+                </div>
+        </div>
+</div>
+                        
+                        <!-- End of logoSubscribeButton -->
+
     
     </footer>
 
