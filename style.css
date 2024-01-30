@@ -93,20 +93,22 @@ main {
 }
 
 .benefitsSubscribers {
-    margin-left: 15px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .IndexScorecardsubmitAddBtnLogo {
-        width: 80%;
+        width: 70%;
         height: 40px;
         padding: 0px 20px;
-        margin: 10px 5px 5px 5px;
+        margin: 10px 14% 5px 14%;
         background: #2274A5;
         border: none;
         font-size: .8em;
@@ -450,13 +452,14 @@ input[type=password] {
 .digitalScorecardTop{
     font-family: arial;
     color: white;
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10px;
     margin-bottom: 0px;
     padding-top: 0px;
     height: auto;
     font-size: .9em;
+    text-align: center;
 }
 
 .digitalScorecardFront {
