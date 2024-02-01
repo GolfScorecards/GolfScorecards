@@ -11,9 +11,9 @@ body {
 
 /* index page */
 .mainPicture {
-    /* background-color:#a3cd9e; */
+    background-color:#5193c6;
     /* background-image: url(pexels-photo-54123.jpg); */
-    background-image: url(golf1.png);
+    /* background-image: url(golf1.png); */
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 600px; */
@@ -118,7 +118,7 @@ main {
     margin-bottom: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0px;
     text-align: left;
 }
@@ -128,10 +128,10 @@ main {
         height: 40px;
         padding: 0px 20px;
         margin: 10px 0% 5px 0%;
-        background: #2274A5;
+        background: #58ebf0;
         border: none;
         font-size: .8em;
-        color: white;
+        color: black;
         box-shadow: 2px 2px 6px #000000;
         border-radius: 10px;
 }
@@ -483,12 +483,12 @@ input[type=password] {
     font-family: arial;
     color: white;
     margin-left: 5%;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-top: 0px;
     height: auto;
-    font-size: 25px;
+    font-size: 28px;
     text-align: left;
 }
 
@@ -1450,7 +1450,7 @@ footer {
     margin-top: 5px;
     margin-bottom: 0px;
     padding: 5px;
-    text-align: right;
+    text-align: center;
 }
 
 .flexlinkdisplay {
