@@ -19,6 +19,25 @@ body {
     /* height: 600px; */
 }
 
+.mainLogo {
+    background-image: url(logo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 48px;
+    margin: auto 0px;
+    border-radius: 2px;
+}
+
+.mainLogoFooter {
+        background-image: url(logo3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 129px;
+        height: 48px;
+        margin: auto auto;
+        border-radius: 2px;
+}
 
 
 /* Image from unsplash */
@@ -93,22 +112,22 @@ main {
 }
 
 .benefitsSubscribers {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: 16px;
     letter-spacing: 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .IndexScorecardsubmitAddBtnLogo {
-        width: 70%;
+        width: 40%;
         height: 40px;
         padding: 0px 20px;
-        margin: 10px 14% 5px 14%;
+        margin: 10px 0% 5px 0%;
         background: #2274A5;
         border: none;
         font-size: .8em;
@@ -201,7 +220,7 @@ main {
     
     /* background-color: #9CC5A1; */
     /* background-color: #A9A9A9; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* transition: 0.5s; */
 }
 
@@ -225,12 +244,13 @@ a {
 }
 
 .aTagTopNavDivLogoSubscribe {
+        /* position:fixed; */
         font-family: 'Franklin Gothic large', 'Arial bold', Arial, sans-serif;
         font-weight: bold;
         padding: 15px 5px;
         font-size: 5px;
         /* background-color: #A5CCD1; */
-        background-color: #9ED0E6;
+        background-color: #242627;
 }
 
 .threeLines {
@@ -394,6 +414,7 @@ color: white;
 
 .termsPaymentPopup {
     margin: 10px 2%;
+    font-size: 16px;
 }
 
 a {
@@ -445,21 +466,30 @@ input[type=password] {
 }
 
 .mainTopDiv {
-    margin-top: 20px;
-    padding-top: 2px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.addCourseMap{
+    height:100px;
+    color: white;
+    background-color: #35635b;
+    padding: 70px 5px 40px 5px;
+    margin: 0px 0px;
+    text-align: center;
 }
 
 .digitalScorecardTop{
     font-family: arial;
     color: white;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-right: 20%;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     padding-top: 0px;
     height: auto;
-    font-size: .9em;
-    text-align: center;
+    font-size: 25px;
+    text-align: left;
 }
 
 .digitalScorecardFront {
@@ -1014,18 +1044,23 @@ label:before {
     padding: 0 0;
 }
 
-
-
-.aTagTopNav {
-    padding: 16px 5px;
+.topnav1{
+    display: block;
+    position: fixed;
+   
 }
+
+/* .aTagTopNav {
+    padding: 16px 5px;
+} */
 
 
 .aTagTopNavDivLogo {
+    position: fixed;
     font-family: 'Arial';
     color: white;
-    background-color: #2274A5;
-    padding: 10px 15px;
+    background-color: #3e3e3e;
+    padding: 0px;
 }
 
 #mySidenavMenu {
@@ -1047,6 +1082,7 @@ label:before {
 
 .topOfPopUp {
     display: inline;
+    font-size: 12px;
 }
 
 /* .bottomOfPopUp { */
@@ -1066,9 +1102,8 @@ label:before {
     display: none;
     height: auto;
     display: block;
-    width: 94%;
+    width: 90%;
     position: top;
-
 }
 
 
@@ -1094,7 +1129,7 @@ label:before {
 .logoSubscribePopUp {
         /* display: none; */
         height: 70%;
-        width: 95%;
+        width: 85%;
         position: fixed;
         z-index: 4;
         bottom: 0;
@@ -1111,7 +1146,7 @@ label:before {
 #logoSubscribeButton1 {
     display: none;
     height: 70%;
-    width: 95%;
+    width: 90%;
     position: fixed;
     z-index: 4;
     top: 20%;
