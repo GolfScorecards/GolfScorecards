@@ -11,7 +11,7 @@ body {
 
 /* index page */
 .mainPicture {
-    background-color:#5193c6;
+    background-color:white;
     /* background-image: url(pexels-photo-54123.jpg); */
     /* background-image: url(golf1.png); */
     background-size: cover;
@@ -19,46 +19,28 @@ body {
     /* height: 600px; */
 }
 
+/* 2/1/2024 */
+/* https: //www.pexels.com/photo/golf-court-under-blue-sky-14745766/ */
+
 .mainLogo {
-    background-image: url(logo3.png);
+    background-image: url(logo2-Transparent.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 129px;
+    width: 175px;
     height: 48px;
     margin: auto 0px;
     border-radius: 2px;
 }
 
 .mainLogoFooter {
-        background-image: url(logo3.png);
+        background-image: url(logo2-Transparent.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 129px;
+        width: 170px;
         height: 48px;
         margin: auto auto;
         border-radius: 2px;
 }
-
-
-/* Image from unsplash */
-
-/* https://css-tricks.com/snippets/css/transparent-background-images/ */
-/* .mainPicture::after {
-  content: "";
-image
-  opacity: 1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  color: white;
-
-} */
 
 .title1 {
     text-align: center;
@@ -118,17 +100,17 @@ main {
     margin-bottom: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0px;
     text-align: left;
 }
 
 .IndexScorecardsubmitAddBtnLogo {
-        width: 40%;
+        width: 50%;
         height: 40px;
         padding: 0px 20px;
         margin: 10px 0% 5px 0%;
-        background: #58ebf0;
+        background: #78c1f3;
         border: none;
         font-size: .8em;
         color: black;
@@ -217,7 +199,6 @@ main {
     box-shadow: 1px 1px 3px black;
     /* left: 0; */
     /* background-color: #DFDFDF; */
-    
     /* background-color: #9CC5A1; */
     /* background-color: #A9A9A9; */
     /* overflow-x: hidden; */
@@ -262,25 +243,6 @@ a {
     font-size: 12px;
 }
 
-/* 
-.welcomeTextIndex {
-     width: auto;
-    height: auto;
-    padding: 10px 20px;
-    margin:8px 5px 5px 5px;
-    background:gray;
-  border:none;
-  font-size:1em;
-  color:white;
-  box-shadow: 2px 2px 6px #000000;
-  color: white;
-}
-
-.welcomeTextIndex:hover {
-color: white;
-} */
-
-
 /* side nav */
 
 .sidenav {
@@ -305,29 +267,6 @@ color: white;
     transition: 0.3s;
 }
 
-/* Bottom Nav */
-/* .bottomNav {
-  height: 30%;
-  width: 100%;
-  position: fixed;
-  z-index: 4;
-  bottom: 0;
-  right: 0;
-  background-color:#DFDFDF;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-} */
-
-/* .bottomNav a {
-  padding: 8px 90px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-} */
-
 
 .sidenav2 {
     height: 100%;
@@ -350,9 +289,6 @@ color: white;
     display: block;
     transition: 0.3s;
 }
-
-
-
 
 .navLeaderBoardClosingTag {
     padding: 8px 90px 8px 32px;
@@ -468,15 +404,26 @@ input[type=password] {
 .mainTopDiv {
     margin-top: 0px;
     padding-top: 0px;
-}
+    /* background-image: url(SkyImage.png); */
+    background-image: url(fairwayGreen.png);
+    /* background-image: url(fairwayGreenBlank.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+    justify-content: center;
+    }
+
 
 .addCourseMap{
     height:100px;
-    color: white;
-    background-color: #35635b;
+    color: black;
+    background-color: #78c1f3;
     padding: 70px 5px 40px 5px;
     margin: 0px 0px;
     text-align: center;
+
 }
 
 .digitalScorecardTop{
@@ -488,14 +435,14 @@ input[type=password] {
     margin-bottom: 20px;
     padding-top: 0px;
     height: auto;
-    font-size: 28px;
+    font-size: 20px;
     text-align: left;
 }
 
 .digitalScorecardFront {
     font-family: arial;
     color: white;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-right: 5px;
     margin-top: 15px; 
     margin-bottom: 0px;
@@ -504,7 +451,7 @@ input[type=password] {
 }
 
 .digitalScorecardFront9 {
-    background-color: grey;
+    background-color: #1d6b93;
     color: white;
     margin-left: 5px;
     margin-right:5px;
@@ -514,7 +461,7 @@ input[type=password] {
 }
 
 .digitalScorecardBack9 {
-    background-color: grey;
+    background-color: #1d6b93;
         color: white;
         margin-left: 5px;
         margin-right: 5px;
@@ -524,8 +471,17 @@ input[type=password] {
 }
 
 .scanQRBox {
-    background-color:#e5f1e3;
+    /* background-color:white; */
     padding: 50px;
+        /* background-image: url(SkyImage.png); */
+            background-image: url(fairwayGreen.png);
+            /* background-image: url(fairwayGreenBlank.png); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
 }
 
 .sideNavPadding {
@@ -1059,7 +1015,7 @@ label:before {
     position: fixed;
     font-family: 'Arial';
     color: white;
-    background-color: #3e3e3e;
+    background-color: #78c1f3;
     padding: 0px;
 }
 
@@ -1164,14 +1120,14 @@ footer {
     display: block;
     /* height:220px; */
     width: 100%;
-    background-color: #35635b;
-    box-shadow: 0px 75px #35635b;
+    background-color: #78c1f3;
+    box-shadow: 0px 75px #78c1f3;
     text-align: center; 
 }
 
 .footerDiv {
     padding: 7%;
-    color:white;
+    color:black;
 }
 
 .footerdivparent {
@@ -1431,15 +1387,8 @@ footer {
     margin: 5px 0px;
 }
 
-/* .buttonForSum {
-  border-color: chartreuse;
-  color: #4CAF50;
-  background-color: #7CA982;
-
-} */
-
 .scorecardLogoGrey {
-    background-color: grey;
+    background-color: #1d6b93;
     font-size: 18px;
     font-weight: normal;
     font-style: italic;
@@ -1458,7 +1407,7 @@ footer {
 }
 
 .horizontalScorecard {
-    background-color: grey;
+    background-color: #1d6b93;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1476,7 +1425,7 @@ footer {
 }
 
 .horizontalScorecardboxDetails {
-    background-color: grey;
+    background-color: #1d6b93;
     align-items: left;
     width: 100%;
     display: flex;
@@ -1485,18 +1434,15 @@ footer {
     color: white;
 }
 
-
-
 .horizontalScorecardboxName {
     width: 20%;
 }
-
 
 .scorecardWrapperBox {
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    height: 250px;
+    height: 172px;
 }
 
 .horizontalInput {
@@ -1515,9 +1461,6 @@ footer {
 
 .scorecardlink {
     background-color: #2274A5;
-    /* background-image: url(Scorecard_screensave.png); */
-    /* background-size:contain; */
-    /* background-repeat:no-repeat; */
     width: 220px;
     height: 250px;
     font-size: 10px;
@@ -1528,7 +1471,6 @@ footer {
     /* border: 1px solid #ddd; */
     border-radius: 4px;
     padding: 5px;
-    /* width: 150px; */
 }
 
 .scorecardlink:hover {
@@ -1591,15 +1533,6 @@ footer {
     text-decoration: underline;
     float: none;
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (device-width: 768px),
 only screen and (min-width: 768px) {
