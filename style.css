@@ -1418,11 +1418,10 @@ footer {
     font-weight: 600;
     font-style: italic;
     text-shadow: white 1px 0 10px;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif; */
     color: black;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 0px;
     padding: 10px;
     text-align: center;
