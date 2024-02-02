@@ -114,12 +114,13 @@ main {
         margin: 10px 0% 5px 0%;
         background: #78c1f3;
         border: none;
-        font-size: .8em;
+        font-size: 18px;
         font-weight: 600;
-        color: white;
-        text-shadow: rgb(0, 0, 0) 1px 0 10px;
-        box-shadow: 2px 2px 6px #000000;
-        border-radius: 10px;
+            color: black;
+            font-style: italic;
+            text-shadow: white 1px 0 10px;
+            box-shadow: 2px 2px 6px #000000;
+            border-radius: 10px;
 }
 
 .IndexScorecardsubmitAddBtn1 {
@@ -423,12 +424,22 @@ input[type=password] {
 
 .addCourseMap{
     height:100px;
-    color: black;
     background-color: #78c1f3;
-    padding: 70px 5px 40px 5px;
+    padding: 80px 5px 40px 5px;
     margin: 0px 0px;
-    text-align: center;
-
+    color: black;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: italic;
+        text-shadow: white 1px 0 10px;
+        text-align: center;
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif; */
+        /* color: black; */
+        /* margin-left: 5px; */
+        /* margin-right: 5px; */
+        /* margin-top: 5px; */
+        /* margin-bottom: 0px; */
+        /* padding: 10px; */
 }
 
 .digitalScorecardTop{
@@ -478,17 +489,18 @@ input[type=password] {
 }
 
 .scanQRBox {
-    /* background-color:white; */
     padding: 50px;
-        /* background-image: url(SkyImage.png); */
-            background-image: url(fairwayGreen.png);
-            /* background-image: url(fairwayGreenBlank.png); */
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* display: flex; */
-            /* flex-direction: row; */
-            /* flex-wrap: wrap; */
-            justify-content: center;
+    /* background-image: url(SkyImage.png); */
+    background-image: url(fairwayGreen.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: white 1px 0 10px;
+    text-align: center;
 }
 
 .sideNavPadding {
@@ -1024,6 +1036,9 @@ label:before {
     color: white;
     background-color: white;
     /* background-color: #78c1f3; */
+    border-color: black;
+    border-top-style: solid;
+    border-top-width: medium;
     padding: 0px;
     box-shadow: 0px 0px 7px black;
 }
@@ -1398,17 +1413,18 @@ footer {
 }
 
 .scorecardLogoGrey {
-    background-color: #1d6b93;
+    background-color: #78c1f3;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
     font-style: italic;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif;
-    color: white;
+    text-shadow: white 1px 0 10px;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, serif; */
+    color: black;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 0px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -1451,8 +1467,8 @@ footer {
 .scorecardWrapperBox {
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 5px;
-    height: 172px;
+    /* margin-bottom: 5px; */
+    height: 190px;
 }
 
 .horizontalInput {
