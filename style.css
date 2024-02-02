@@ -233,6 +233,7 @@ a {
         font-size: 5px;
         /* background-color: #A5CCD1; */
         background-color: #242627;
+        box-shadow: 0px 0px 19px 1px;
 }
 
 .threeLines {
@@ -1017,8 +1018,10 @@ label:before {
     position: fixed;
     font-family: 'Arial';
     color: white;
-    background-color: #78c1f3;
+    background-color: white;
+    /* background-color: #78c1f3; */
     padding: 0px;
+    box-shadow: 0px 0px 7px black;
 }
 
 #mySidenavMenu {
@@ -1122,7 +1125,8 @@ footer {
     display: block;
     /* height:220px; */
     width: 100%;
-    background-color: #78c1f3;
+    /* background-color: #78c1f3; */
+    background-color: white;
     box-shadow: 0px 75px #78c1f3;
     text-align: center; 
 }
@@ -1469,7 +1473,6 @@ footer {
     margin: 5px;
     padding: 5px;
     box-shadow: 2px 2px 6px #000000;
-
     /* border: 1px solid #ddd; */
     border-radius: 4px;
     padding: 5px;
