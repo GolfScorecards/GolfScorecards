@@ -101,6 +101,7 @@ main {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    font-weight: 600;
     letter-spacing: 0px;
     text-align: left;
     text-shadow: rgb(0, 0, 0) 1px 0 30px;
@@ -438,6 +439,7 @@ input[type=password] {
     padding-top: 0px;
     height: auto;
     font-size: 20px;
+    font-weight: 600;
     text-align: left;
     text-shadow: rgb(0, 0, 0) 1px 0px 30px;
 }
