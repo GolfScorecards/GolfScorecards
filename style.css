@@ -93,6 +93,22 @@ main {
     border-radius: 10px;
 }
 
+.payHereButton {
+        width: 90%;
+        height: auto;
+        padding: 10px 20px;
+        margin: 5px 5px;
+        background: #78c1f3;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+        font-style: italic;
+        text-shadow: white 1px 0 10px;
+        box-shadow: 2px 2px 6px #000000;
+        border-radius: 10px;
+}
+
 .benefitsSubscribers {
     margin-left: 5%;
     margin-right: 10%;
@@ -355,7 +371,7 @@ a {
 }
 
 .termsPaymentPopup {
-    margin: 10px 2%;
+    margin: 10px 1%;
     font-size: 16px;
 }
 
@@ -1108,6 +1124,7 @@ label:before {
 
 .logoSubscribePopUp {
         /* display: none; */
+        text-align: left;
         height: 70%;
         width: 85%;
         position: fixed;
@@ -1125,16 +1142,17 @@ label:before {
 
 #logoSubscribeButton1 {
     display: none;
-    height: 70%;
+    height: 80%;
     width: 90%;
     position: fixed;
     z-index: 4;
-    top: 20%;
+    top: 10%;
+    bottom: 10%;
     /* right: 0; */
     background-color: #DFDFDF;
     overflow-x: hidden;
     transition: 0.5s;
-    align-items: center;
+    align-items: left;
     margin: 3%;
     border-radius: 10px;
     box-shadow: 0px 0px 19px 1px;
@@ -1549,6 +1567,19 @@ footer {
     text-decoration: underline;
     float: none;
     margin: 10px;
+    align-items: center;
+}
+.emailLinkBlue {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.paymentLink {
+    color: blue;
+    text-decoration: underline;
+    float: none;
+    margin: 0 10px 0 0;
     align-items: center;
 }
 
