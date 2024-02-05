@@ -508,8 +508,8 @@ input[type=password] {
 .digitalScorecardFront9 {
     background-color: #1d6b93;
     color: white;
-    margin-left: 5px;
-    margin-right:5px;
+    margin-left: 0px;
+    margin-right:0px;
     padding: 5px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -518,8 +518,8 @@ input[type=password] {
 .digitalScorecardBack9 {
     background-color: #1d6b93;
         color: white;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
         padding: 5px;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -1461,9 +1461,9 @@ footer {
     font-style: italic;
     text-shadow: white 1px 0 10px;
     color: black;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
     margin-bottom: 0px;
     padding: 10px;
     text-align: center;
@@ -1506,10 +1506,14 @@ footer {
 }
 
 .scorecardWrapperBox {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 0px;
     height: 195px;
+}
+
+.nameMargin {
+    margin-left:5px;
 }
 
 .horizontalInput {
