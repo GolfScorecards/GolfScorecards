@@ -1120,7 +1120,7 @@ label:before {
     display: none;
     height: auto;
     display: block;
-    width: 97%;
+    width: 100%;
     position: top;
 }
 
@@ -1138,7 +1138,7 @@ label:before {
     overflow-x: hidden;
     transition: 0.5s;
     align-items: center;
-    margin: 5px;
+    margin: 5px 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 19px 1px;
 }
@@ -1165,8 +1165,8 @@ label:before {
 
 #logoSubscribeButton1 {
     display: none;
-    height: 80%;
-    width: 97%;
+    height: 88%;
+    width: 100%;
     position: fixed;
     z-index: 4;
     top: 10%;
@@ -1176,7 +1176,7 @@ label:before {
     overflow-x: hidden;
     transition: 0.5s;
     align-items: left;
-    margin: 5px;
+    margin: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 19px 1px;
     max-width: 850px;
