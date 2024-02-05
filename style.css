@@ -513,6 +513,7 @@ input[type=password] {
     padding: 5px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: 600;
 }
 
 .digitalScorecardBack9 {
@@ -523,6 +524,7 @@ input[type=password] {
         padding: 5px;
         margin-top: 0px;
         margin-bottom: 0px;
+        font-weight: 600;
 }
 
 .scanQRBox {
