@@ -1498,8 +1498,8 @@ footer {
     align-items: left;
     width: 100%;
     display: flex;
-    padding: 2px 0px;
-    font-size: 14px;
+    padding: 0px 0px;
+    font-size: 12px;
     color: white;
 }
 
