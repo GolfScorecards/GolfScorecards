@@ -21,7 +21,7 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    
     <link rel="stylesheet" href="style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +43,9 @@
 <body>
 <div class="divMaxWidth">
     <div class="mainPicture">
-      
+
+
+
         <div class="mainTopnumber">
 
             <!-- top nav bar -->
@@ -92,6 +94,7 @@
                 <br> -Shareable QR Code
                 <br> -Instant Sum Technology
         </div>
+        <div id='alrt' style="font-weight: 'bold; display:none'"></div>
     <br>
       
                 
@@ -770,10 +773,10 @@
         <div class="addCourseMap"> +Your Course Map Here+</div>
             <!-- Start of QR code sharing -->
             <div class="scanQRBox">
-                Scan to Open Scorecard
+                <div id="expiredQRcode1">Scan to Open Scorecard </div>
                 <br><br><br>
 
-                <div class="QRcode" style="margin: auto; "></div>
+                <div class="QRcode" id="expiredQRcode" style="margin: auto; "></div>
 
             </div>
 
@@ -812,7 +815,7 @@
         </div>
     
     
-<!-- start of privacy and data compliance -->
+<!-- start of privacy and data compliance popup -->
 <!-- SideNavCookies  -->
 <div class="displaySquares">
         <div id="mySidenavCookies" class="sidenavCookies">
@@ -831,7 +834,7 @@
                                         
                                 </h5>
                         </div>
-                        <!-- end of topOfPopUp -->
+                        <!-- end of cookie policy PopUp -->
 
 
                         <div class="bottomOfPopUp">
@@ -853,7 +856,7 @@
         </div>  
 </div>    
 
-    <!-- start of logoSubscribeButton -->
+    <!-- start of Subscribe popup -->
 <div class="displaySquaresPopUp">
         <div id="logoSubscribeButton1" class="logoSubscribePopUp">
 
@@ -885,7 +888,8 @@
                         <div class="termsPaymentPopup">
                                 (3) ALLOW 1-3 days for processing.
                                 <br> <br>
-                                (4) RECEIVE a digital scorecard featuring your logo, course map, and a shareable QR code to your email.
+                                (4) RECEIVE a digital scorecard featuring your logo, course map, and a shareable Time Sensitive QR code for your
+                                members, to your email.
                                 <br>
                                 
                         </div>
@@ -897,15 +901,68 @@
 
                         <!-- end of topOfPopUp -->
 
+        </div>
+        </div>
+</div>                        
+<!-- End of Subscribe popup -->
+
+<!-- start of previewExpired popup-->
+
+<div class="displaySquaresPopUp">
+        <div id="PreviewExpired" class="logoSubscribePopUp">
+
+                <div class="closeXButton" onclick="closeSubscribePopUp()"></div>
+
+                <div class="bottomCookiePolicyPopup">
+
+                        <div class="topOfPopUp">
+
+                                <div class="subscriptionPopUpWindow">
+
+                                        <h1 style="margin:0%">The 20 second Free Preview has expired please subscribe below:</h1>
+                                        <br>
+                                        <div class="termsPaymentPopup">(1) EMAIL your logo, course map, par, yards,
+                                                along with the name of contact and the golf course mailing address to:
+                                                <div class="emailLinkBlue">golfAppycards@gmail.com</div>
+                                        </div>
+
+                                        <div class="termsPaymentPopup">(2) PAY $899/year subscription</div>
+
+                                        <a class="paymentLink"
+                                                href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-288fd4c666234d38a68250b715acedd93423fcb37761458b8ea1363dd51da4d927ea5e4ef80640419b3c81afdc8cdc94?locale=EN_US"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <button class="payHereButton">Pay Here</button>
+                                        </a>
+
+                                        <div class="paymentOptions"></div>
+
+                                </div>
+                        </div>
+                        <div class="bottomOfPopUp">
+                                <div class="termsPaymentPopup">
+                                        (3) ALLOW 1-3 days for processing.
+                                        <br> <br>
+                                        (4) RECEIVE a digital scorecard featuring your logo, course map, and a shareable Time Sensitive QR code for your members, to your email.
+                                        <br>
+
+                                </div>
+
+                                <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                                        onclick="closeSubscribePopUp()">Done</button>
+
+                        </div>
+
+                        <!-- end of topOfPopUp -->
+
                 </div>
         </div>
 </div>
-                        
-                        <!-- End of logoSubscribeButton -->
+<!-- end of PreviewExpired popup -->
 
     
+
     </footer>
 </div>
 <!-- end of divMaxWidth -->
-
+<script type="text/javascript" src="app.js"></script>
 </body>

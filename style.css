@@ -1184,6 +1184,25 @@ label:before {
     max-width: 850px;
 }
 
+#PreviewExpired {
+    display: none;
+    height: 88%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 10%;
+    bottom: 10%;
+    /* right: 0; */
+    background-color: #DFDFDF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: left;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 1px;
+    max-width: 850px;
+}
+
 footer {
     display: block;
     /* height:220px; */
@@ -1388,6 +1407,7 @@ footer {
 }
 
 .QRcode {
+    display: block;
     /* background-color: green; */
     background-image: url(QR-code-to-Golfer-Scorecards2.png);
     background-size: cover;

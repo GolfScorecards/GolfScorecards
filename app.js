@@ -371,6 +371,16 @@ function closeSubscribePopUp() {
 }
 
 
+// timer for exipred time on free preview
+
+setTimeout(function () { document.getElementById("PreviewExpired").style.display = "block"; }, 20000);
+
+// timer for expired time on QR code
+setTimeout(function () { document.getElementById("expiredQRcode").style.display = "none"; }, 10000);
+setTimeout(function () { document.getElementById("expiredQRcode1").innerHTML = '<b>QR code has expired</b>'; }, 10000);
+
+// document.getElementById('alrt').innerHTML = '<b>Please wait, Your download will start soon!!!</b>';
+// setTimeout(function () { document.getElementById('alrt').innerHTML = ''; }, 5000);
 
 
 ///////////////////////////////////
