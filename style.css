@@ -65,8 +65,6 @@ body {
 main {
     padding: 16px;
     text-align: center;
-    /* margin: 0 10%; */
-    /* min-width: 430px; */
 }
 
 .WatchlistTitle {
@@ -218,12 +216,6 @@ main {
     z-index: 1;
     top: 0;
     box-shadow: 1px 1px 3px black;
-    /* left: 0; */
-    /* background-color: #DFDFDF; */
-    /* background-color: #9CC5A1; */
-    /* background-color: #A9A9A9; */
-    /* overflow-x: hidden; */
-    /* transition: 0.5s; */
 }
 
 a {
@@ -246,7 +238,6 @@ a {
 }
 
 .aTagTopNavDivLogoSubscribe {
-        /* position:fixed; */
         font-family: 'Franklin Gothic large', 'Arial bold', Arial, sans-serif;
         font-weight: bold;
         padding: 15px 5px;
@@ -304,7 +295,6 @@ a {
 }
 
 .sidenav2 a {
-    /* padding: 8px 90px 8px 32px; */
     text-decoration: none;
     font-size: 18px;
     color: black;
@@ -1336,7 +1326,6 @@ footer {
 }
 
 .box4 {
-    /* background-color: green; */
     background-image: url(sandbunker.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1345,7 +1334,6 @@ footer {
 }
 
 .box5 {
-    /* background-color: green; */
     background-image: url(pexels-photo-274133.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1376,7 +1364,6 @@ footer {
 }
 
 .box8 {
-    /* background-color: green; */
     background-image: url(magnolia-golf-course-mobile-alabama-golfing-163886.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1385,7 +1372,6 @@ footer {
 }
 
 .box9 {
-    /* background-color: green; */
     background-image: url(tyson-dudley-122441.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1408,7 +1394,6 @@ footer {
 
 .QRcode {
     display: block;
-    /* background-color: green; */
     background-image: url(QR-code-to-Golfer-Scorecards2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1428,7 +1413,6 @@ footer {
         border-radius: 8px;
 }
 
-
 .headerDescriptionShareQR {
     margin-top:0px;
     margin-bottom: 20px;
@@ -1440,16 +1424,13 @@ footer {
     margin-top: 20px;
     padding-left: 10px;
     width: 50%;
-    /* background-color: #ccc; */
 }
 
 .headerDescriptionShareQRright {
     margin-top: 20px;
     width: 50%;
     text-align: center;
-    /* background-color: #a3c2a7; */
 }
-
 
 .clickableSum {
     width: 100%;
@@ -1599,11 +1580,6 @@ footer {
     margin: auto;
     width: 80%;
     text-align: left;
-}
-
-.worldRankBox {
-    background-color: rgb(249, 249, 249);
-    /* padding-top: 20px; */
 }
 
 .aTagButtonLogOut {
