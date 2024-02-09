@@ -2,11 +2,11 @@ body {
     background-color: white;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 850px;
+    max-width: 650px;
 }
 
 .divMaxWidth {
-    max-width: 850px;
+    max-width: 650px;
 }
 
 /* index page */
@@ -16,7 +16,7 @@ body {
     /* background-image: url(golf1.png); */
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 850px;
+    max-width: 650px;
 }
 
 /* 2/1/2024 */
@@ -159,6 +159,12 @@ main {
     font-size: 1em;
     color: white;
     box-shadow: 2px 2px 6px #000000;
+}
+
+.bothScorecardsWrapper {
+    display: block;
+    height: 560px;
+    background-color: #1d6b93;
 }
 
 
@@ -1070,7 +1076,7 @@ label:before {
     border-top-width: medium;
     padding: 0px;
     box-shadow: 0px 0px 7px black;
-    max-width: 850px;
+    max-width: 650px;
 }
 
 #mySidenavMenu {
@@ -1121,7 +1127,7 @@ label:before {
 .sidenavCookies {
     height: auto;
     width: 97%;
-    max-width: 850px;
+    max-width: 650px;
     position: fixed;
     z-index: 4;
     bottom: 0;
@@ -1171,7 +1177,7 @@ label:before {
     margin: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 19px 1px;
-    max-width: 850px;
+    max-width: 650px;
 }
 
 #PreviewExpired {
@@ -1190,7 +1196,7 @@ label:before {
     margin: 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 19px 1px;
-    max-width: 850px;
+    max-width: 650px;
 }
 
 footer {

@@ -376,8 +376,8 @@ function closeSubscribePopUp() {
 // setTimeout(function () { document.getElementById("PreviewExpired").style.display = "block"; }, 20000);
 
 // timer for expired time on QR code
-// setTimeout(function () { document.getElementById("expiredQRcode").style.display = "none"; }, 10000);
-// setTimeout(function () { document.getElementById("expiredQRcode1").innerHTML = '<b>QR code has expired</b>'; }, 10000);
+setTimeout(function () { document.getElementById("expiredQRcode").style.display = "none"; }, 43200000);
+setTimeout(function () { document.getElementById("expiredQRcode1").innerHTML = '<b>The 12-hour QR code has expired <br> Rescan to open scorecard</b>'; }, 43200000);
 
 
 
