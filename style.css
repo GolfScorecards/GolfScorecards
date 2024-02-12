@@ -1060,6 +1060,23 @@ label:before {
    
 }
 
+.newsletterSignup {
+    display: block;
+    margin: 20px;
+    padding: 5px;
+    font: 14px Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+        box-shadow: 0px 0px 19px 1px;
+}
+
+.clear.foot {
+    margin-top: 16px;
+}
+
+.insideNewsletterBox {
+    margin: 10px;
+}
+
 .optionsSection {
     height: auto;
         background-color: #1d6b93;
