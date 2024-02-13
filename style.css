@@ -90,7 +90,7 @@ main {
     font-size: 1em;
     color: white;
     box-shadow: 2px 2px 6px #000000;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .payHereButton {
@@ -106,7 +106,7 @@ main {
         font-style: italic;
         text-shadow: white 1px 0 10px;
         box-shadow: 2px 2px 6px #000000;
-        border-radius: 10px;
+        border-radius: 20px;
 }
 
 .benefitsSubscribers {
@@ -136,7 +136,7 @@ main {
             font-style: italic;
             text-shadow: white 1px 0 10px;
             box-shadow: 2px 2px 6px #000000;
-            border-radius: 10px;
+            border-radius: 20px;
 }
 
 .IndexScorecardsubmitAddBtn1 {
