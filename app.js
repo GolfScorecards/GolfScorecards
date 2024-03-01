@@ -379,9 +379,15 @@ function closeSubscribePopUp() {
 setTimeout(function () { document.getElementById("expiredQRcode").style.display = "none"; }, 43200000);
 setTimeout(function () { document.getElementById("expiredQRcode1").innerHTML = '<b>The 12-hour QR code has expired <br> Rescan to open scorecard</b>'; }, 43200000);
 
-
-
-
+// open counter
+function openCounter() {
+    document.getElementById("Counter").style.display = "block";
+    console.log("Opened Counter")
+}
+function closeCounter() {
+    document.getElementById("Counter").style.display = "none";
+    console.log("Closed Counter")
+}
 ///////////////////////////////////
 
 // Links to resources

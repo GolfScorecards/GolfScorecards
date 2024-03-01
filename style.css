@@ -163,6 +163,15 @@ main {
     box-shadow: 2px 2px 6px #000000;
 }
 
+#Counter {
+    display: none;
+}
+
+.counterButtons{
+color: white;
+text-align: left;
+}
+
 .bothScorecardsWrapper {
     display: block;
     height: 560px;
