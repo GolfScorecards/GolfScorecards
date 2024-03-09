@@ -388,6 +388,12 @@ function closeCounter() {
     document.getElementById("Counter").style.display = "none";
     console.log("Closed Counter")
 }
+
+//distanceButtonRangeFinderDelay
+setTimeout(function () { document.getElementById("buttonRangeFinderDelay").style.display = "block"; }, 10000);
+
+
+
 ///////////////////////////////////
 
 // Links to resources
