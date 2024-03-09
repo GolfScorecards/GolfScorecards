@@ -172,10 +172,17 @@ color: white;
 text-align: left;
 }
 
+/* distance */
+
+
 .bothScorecardsWrapper {
     display: block;
-    height: 560px;
+    height: 650px;
     background-color: #1d6b93;
+}
+
+#buttonRangeFinderDelay {
+    display: none;
 }
 
 
