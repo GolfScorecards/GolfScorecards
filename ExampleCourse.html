@@ -114,6 +114,41 @@
         "></div> -->
 
         <br><br><br><br><br><br>
+
+<p style="color: white; font-size: 2px;" id="demo"></p>
+
+<div class="box99" style="
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+">
+        <div id="distance"></div>
+        <br>
+
+        <button id="buttonRangeFinderDelay" class="IndexScorecardsubmitAddBtn" onclick="distanceFinder1();distanceFinder2(); distanceFinder3();distanceFinder4();distanceFinder5();distanceFinder6();distanceFinder7();distanceFinder8();distanceFinder9();distanceFinder10();distanceFinder11();distanceFinder12(); distanceFinder13();distanceFinder14();distanceFinder15();distanceFinder16();distanceFinder17();distanceFinder18();">GPS Range Finder <br> Click to Refresh Remaining Yards</button>
+
+
+        <!-- end of setTimeout Button Delay -->
+        <!-- <button onclick="distanceWrapper()">Click to refresh GPS Distance Remaining to Holes</button> -->
+        <div id="total"></div>
+</div>
+
+
+
+
+
+
+<!-- https://maps.googleapis.com/maps/api/distancematrix/json
+?destinations=New%20York%20City%2C%20NY
+&origins=Washington%2C%20DC%7CBoston
+&units=imperial
+&key=YOUR_API_KEY -->
+
+
+
 <div class="bothScorecardsWrapper">
         
                 <div class="digitalScorecardFront9">Front 9</div>
@@ -159,7 +194,21 @@
                         <div class="horizontalScorecardbox">-</div>
                         <div class="horizontalScorecardbox">-</div>
                 </div>
-                
+                <!-- start GPS distance -->
+        <div class="horizontalScorecardboxDetails">
+                <div class="horizontalScorecardboxName" style="padding-left: 5px; width:18%;">GPS Yards to go</div>
+                <div id="distance1" class="horizontalScorecardbox"></div>
+                <div id="distance2" class="horizontalScorecardbox"></div>
+                <div id="distance3" class="horizontalScorecardbox"></div>
+                <div id="distance4" class="horizontalScorecardbox"></div>
+                <div id="distance5" class="horizontalScorecardbox"></div>
+                <div id="distance6" class="horizontalScorecardbox"></div>
+                <div id="distance7" class="horizontalScorecardbox"></div>
+                <div id="distance8" class="horizontalScorecardbox"></div>
+                <div id="distance9" class="horizontalScorecardbox"></div>
+        </div>
+
+                <!-- end GPS distance -->
 
                 <!-- end of Hole#, Yards, Par  -->
 
@@ -504,6 +553,21 @@
                         <div class="horizontalScorecardbox"></div>
                 </div>
 
+<!-- start GPS distance -->
+<div class="horizontalScorecardboxDetails">
+        <div class="horizontalScorecardboxName" style="padding-left: 5px; width:18%;">GPS Yards to go</div>
+        <div id="distance10" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance11" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance12" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance13" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance14" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance15" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance16" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance17" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        <div id="distance18" style="width:7.5%;" class="horizontalScorecardbox"></div>
+        
+</div>
+<!-- end GPS distance -->
 
                 <!-- end of Hole#, Yards, Par  -->
 
@@ -873,7 +937,9 @@
                 <p>golfAppycards LLC</p>
                 <div class="mainLogoFooter"></div>
                 
+
         </div>
+        <!-- end of footer div -->
     
     
 <!-- start of privacy and data compliance -->
@@ -902,7 +968,7 @@
 
 
                         <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
-                        onclick="closeNavCookies()">Accept</button>
+                        onclick="closeNavCookies();getLocation()">Accept</button>
                                 <br>
                         <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
                         rel="noopener noreferrer">Customize</a>
@@ -965,10 +1031,786 @@
 </div>
                         
                         <!-- End of logoSubscribeButton -->
-
     
     </footer>
+
 </div>
 <!-- end of divMaxWidth -->
 
+<!-- start of GPS distanceFinder -->
+<script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+                if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+
+        }
+
+        function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+
+                var lat99 = position.coords.latitude
+                var lon99 = position.coords.longitude
+                console.log('this is current lat ' + lat99)
+                console.log('this is current lon ' + lon99)
+
+                //set local variable to global variable:
+                window.lat99G = lat99
+                window.lon99G = lon99
+        }
+        // end of current GPS position coordinates lat lon
+
+// function distanceWrapper() { 
+
+// Hole #1 Distance   
+        // setTimeout(
+        function distanceFinder1() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance1(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance1 = document.getElementById('distance1'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 40.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance1 = distance1($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance1.innerHTML = $distance1 + '';
+
+                console.log('Remaining distance to green ' + $distance1)
+        }
+// end of distanceFinder Hole #1
+
+// Hole #2 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder2() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance2(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance2 = document.getElementById('distance2'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 42.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance2 = distance2($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance2.innerHTML = $distance2 + '';
+
+                console.log('Remaining distance to green ' + $distance2)
+        }
+// end of distanceFinder Hole #2
+
+// Hole #3 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder3() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance3(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance3 = document.getElementById('distance3'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 43.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance3 = distance3($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance3.innerHTML = $distance3 + '';
+
+                console.log('Remaining distance to green ' + $distance3)
+        }
+// end of distanceFinder Hole #3
+
+// Hole #4 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder4() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance4(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance4 = document.getElementById('distance4'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 44.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance4 = distance4($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance4.innerHTML = $distance4 + '';
+
+                console.log('Remaining distance to green ' + $distance4)
+        }
+// end of distanceFinder Hole #4
+
+// Hole #5 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder5() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance5(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance5 = document.getElementById('distance5'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 45.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance5 = distance5($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance5.innerHTML = $distance5 + '';
+
+                console.log('Remaining distance to green ' + $distance5)
+        }
+// end of distanceFinder Hole #5
+
+// Hole #6 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder6() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance6(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance6 = document.getElementById('distance6'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 46.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance6 = distance6($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance6.innerHTML = $distance6 + '';
+
+                console.log('Remaining distance to green ' + $distance6)
+        }
+// end of distanceFinder Hole #6
+
+// Hole #7 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder7() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance7(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance7 = document.getElementById('distance7'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 47.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance7 = distance7($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance7.innerHTML = $distance7 + '';
+
+                console.log('Remaining distance to green ' + $distance7)
+        }
+// end of distanceFinder Hole #7
+
+// Hole #8 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder8() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance8(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance8 = document.getElementById('distance8'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 48.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance8 = distance8($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance8.innerHTML = $distance8 + '';
+
+                console.log('Remaining distance to green ' + $distance8)
+        }
+// end of distanceFinder Hole #8
+
+// Hole #9 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder9() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance9(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance9 = document.getElementById('distance9'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 49.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance9 = distance9($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance9.innerHTML = $distance9 + '';
+
+                console.log('Remaining distance to green ' + $distance9)
+        }
+// end of distanceFinder Hole #9
+
+        // Hole #10 Distance   
+        // setTimeout(
+        function distanceFinder10() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance10(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance10 = document.getElementById('distance10'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 40.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance10 = distance10($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance10.innerHTML = $distance10 + '';
+
+                console.log('Remaining distance to green ' + $distance10)
+        }
+        // end of distanceFinder Hole #10
+
+                // Hole #11 Distance   
+                // setTimeout(
+                function distanceFinder11() {
+                        // Return distance from coordinates (using latitude and longitude)
+                        function distance11(lat1, lon1, lat2, lon2) {
+                                var radlat1 = Math.PI * lat1 / 180,
+                                        radlat2 = Math.PI * lat2 / 180,
+                                        radlon1 = Math.PI * lon1 / 180,
+                                        radlon2 = Math.PI * lon2 / 180,
+                                        theta = lon1 - lon2,
+                                        radtheta = Math.PI * theta / 180,
+                                        sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                        coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                        dist = sinlats + coslats * Math.cos(radtheta);
+
+                                dist = Math.acos(dist);
+                                dist = dist * 180 / Math.PI;
+                                dist = dist * 60 * 1.1515;
+                                dist = dist * 1.609344;
+                                return dist.toFixed(0);
+                        }
+
+                        var $showDistance11 = document.getElementById('distance11'),
+                                $showTotal = document.getElementById('total'),
+                                $p1 = {
+                                        'lat': 40.713955,
+                                        'lon': -74.006652
+                                },
+                                $p2 = {
+                                        'lat': lat99G,
+                                        'lon': lon99G
+                                },
+                                $distance11 = distance11($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                        $showDistance11.innerHTML = $distance11 + '';
+
+                        console.log('Remaining distance to green ' + $distance11)
+                }
+                // end of distanceFinder Hole #11
+
+        // Hole #12 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder12() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance12(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance12 = document.getElementById('distance12'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 42.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance12 = distance12($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance12.innerHTML = $distance12 + '';
+
+                console.log('Remaining distance to green ' + $distance12)
+        }
+        // end of distanceFinder Hole #12
+
+        // Hole #13 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder13() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance13(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance13 = document.getElementById('distance13'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 43.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance13 = distance13($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance13.innerHTML = $distance13 + '';
+
+                console.log('Remaining distance to green ' + $distance13)
+        }
+        // end of distanceFinder Hole #13
+
+        // Hole #14 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder14() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance14(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance14 = document.getElementById('distance14'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 44.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance14 = distance14($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance14.innerHTML = $distance14 + '';
+
+                console.log('Remaining distance to green ' + $distance14)
+        }
+        // end of distanceFinder Hole #14
+
+        // Hole #15 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder15() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance15(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance15 = document.getElementById('distance15'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 45.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance15 = distance15($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance15.innerHTML = $distance15 + '';
+
+                console.log('Remaining distance to green ' + $distance15)
+        }
+        // end of distanceFinder Hole #15
+
+        // Hole #16 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder16() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance16(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance16 = document.getElementById('distance16'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 46.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance16 = distance16($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance16.innerHTML = $distance16 + '';
+
+                console.log('Remaining distance to green ' + $distance16)
+        }
+        // end of distanceFinder Hole #16
+
+        // Hole #17 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder17() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance17(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance17 = document.getElementById('distance17'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 47.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance17 = distance17($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance17.innerHTML = $distance17 + '';
+
+                console.log('Remaining distance to green ' + $distance17)
+        }
+        // end of distanceFinder Hole #17
+
+        // Hole #18 Distance
+        // function distanceWrapper () {                        
+        // setTimeout(
+        function distanceFinder18() {
+                // Return distance from coordinates (using latitude and longitude)
+                function distance18(lat1, lon1, lat2, lon2) {
+                        var radlat1 = Math.PI * lat1 / 180,
+                                radlat2 = Math.PI * lat2 / 180,
+                                radlon1 = Math.PI * lon1 / 180,
+                                radlon2 = Math.PI * lon2 / 180,
+                                theta = lon1 - lon2,
+                                radtheta = Math.PI * theta / 180,
+                                sinlats = Math.sin(radlat1) * Math.sin(radlat2),
+                                coslats = Math.cos(radlat1) * Math.cos(radlat2),
+                                dist = sinlats + coslats * Math.cos(radtheta);
+
+                        dist = Math.acos(dist);
+                        dist = dist * 180 / Math.PI;
+                        dist = dist * 60 * 1.1515;
+                        dist = dist * 1.609344;
+                        return dist.toFixed(0);
+                }
+
+                var $showDistance18 = document.getElementById('distance18'),
+                        $showTotal = document.getElementById('total'),
+                        $p1 = {
+                                'lat': 48.713955,
+                                'lon': -74.006652
+                        },
+                        $p2 = {
+                                'lat': lat99G,
+                                'lon': lon99G
+                        },
+                        $distance18 = distance18($p1.lat, $p1.lon, $p2.lat, $p2.lon);
+
+                $showDistance18.innerHTML = $distance18 + '';
+
+                console.log('Remaining distance to green ' + $distance18)
+        }
+        // end of distanceFinder Hole #18
+
+       
+
+
+
+
+
+        // }
+// end of function distanceWrapper
+
+
+</script>
 </body>
