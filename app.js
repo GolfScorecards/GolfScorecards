@@ -390,8 +390,18 @@ function closeCounter() {
 }
 
 //distanceButtonRangeFinderDelay
-setTimeout(function () { document.getElementById("buttonRangeFinderDelay").style.display = "block"; }, 10000);
 
+function refreshGPSrangeFinder() {
+    document.getElementById("buttonRangeFinderDelay").innerHTML = '<b>Loading GPS distance...</b>';
+    document.getElementById("buttonRangeFinderDelay").style.display = "block"; 
+    setTimeout(function () { 
+        distanceFinder1(); distanceFinder2(); distanceFinder3(); distanceFinder4(); distanceFinder5(); distanceFinder6(); distanceFinder7(); distanceFinder8(); distanceFinder9(); distanceFinder10(); distanceFinder11(); distanceFinder12(); distanceFinder13(); distanceFinder14(); distanceFinder15(); distanceFinder16(); distanceFinder17(); distanceFinder18();
+    }, 10000);
+
+    setTimeout(function () {
+        document.getElementById("buttonRangeFinderDelay").innerHTML = '<b>Scorecard with GPS Range Finder</b>';
+    }, 11000);
+}
 
 
 ///////////////////////////////////

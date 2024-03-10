@@ -131,13 +131,12 @@
         <div id="distance"></div>
         <br>
 </div>
+        <button id="buttonGPSrefresh" class="IndexScorecardsubmitAddBtn" style="width: 50%; margin:5px auto;display: block;" onclick="getLocation(); refreshGPSrangeFinder()" >Refresh GPS Location for Range Finder</button>
 
-        <button id="buttonRangeFinderDelay" class="IndexScorecardsubmitAddBtn" style="width: 50%; margin:5px auto;" onclick="distanceFinder1();distanceFinder2(); distanceFinder3();distanceFinder4();distanceFinder5();distanceFinder6();distanceFinder7();distanceFinder8();distanceFinder9();distanceFinder10();distanceFinder11();distanceFinder12(); distanceFinder13();distanceFinder14();distanceFinder15();distanceFinder16();distanceFinder17();distanceFinder18();">Scorecard with GPS Range Finder <br> Click to See Remaining Yards to Hole</button>
+        <div id="buttonRangeFinderDelay" class="IndexScorecardsubmitAddBtn" style="width: 30%; margin:5px auto; text-align: center;background-color: lightgrey; border-radius: 0px; color: black;">Scorecard with GPS</div>
 
 
-        <!-- end of setTimeout Button Delay -->
-        <!-- <button onclick="distanceWrapper()">Click to refresh GPS Distance Remaining to Holes</button> -->
-        <div id="total" style="margin-bottom: 0px;"></div>
+        <br><br><br>
 </div>
 
 
@@ -307,7 +306,7 @@
                                 <input class="horizontalInput" type="text" id="total" name="total" />
                             </div>
 
-                            <!-- <a class="buttonForSum" href="javascript:sumInputs()"> <button>Sum</button> </a> -->
+                           
 
                         </div>
                     </a>
@@ -972,7 +971,8 @@
 
 
                         <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
-                        onclick="closeNavCookies();getLocation()">Accept</button>
+                        onclick="closeNavCookies();
+                        ">Accept</button>
                                 <br>
                         <a class="footerLink" style="margin: 0; font-size:12px;" href="privacypolicy.html" target="_blank"
                         rel="noopener noreferrer">Customize</a>
@@ -1095,7 +1095,7 @@
                 }
 
                 var $showDistance1 = document.getElementById('distance1'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1137,7 +1137,7 @@
                 }
 
                 var $showDistance2 = document.getElementById('distance2'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1179,7 +1179,7 @@
                 }
 
                 var $showDistance3 = document.getElementById('distance3'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1221,7 +1221,7 @@
                 }
 
                 var $showDistance4 = document.getElementById('distance4'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1263,7 +1263,7 @@
                 }
 
                 var $showDistance5 = document.getElementById('distance5'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1305,7 +1305,7 @@
                 }
 
                 var $showDistance6 = document.getElementById('distance6'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1347,7 +1347,7 @@
                 }
 
                 var $showDistance7 = document.getElementById('distance7'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1389,7 +1389,7 @@
                 }
 
                 var $showDistance8 = document.getElementById('distance8'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1431,7 +1431,7 @@
                 }
 
                 var $showDistance9 = document.getElementById('distance9'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1472,7 +1472,7 @@
                 }
 
                 var $showDistance10 = document.getElementById('distance10'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1513,7 +1513,7 @@
                         }
 
                         var $showDistance11 = document.getElementById('distance11'),
-                                $showTotal = document.getElementById('total'),
+                                // $showTotal = document.getElementById('total'),
                                 $p1 = {
                                         'lat': 37.9963919,
                                         'lon': -78.5341101
@@ -1555,7 +1555,7 @@
                 }
 
                 var $showDistance12 = document.getElementById('distance12'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1597,7 +1597,7 @@
                 }
 
                 var $showDistance13 = document.getElementById('distance13'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1639,7 +1639,7 @@
                 }
 
                 var $showDistance14 = document.getElementById('distance14'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1681,7 +1681,7 @@
                 }
 
                 var $showDistance15 = document.getElementById('distance15'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1723,7 +1723,7 @@
                 }
 
                 var $showDistance16 = document.getElementById('distance16'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1765,7 +1765,7 @@
                 }
 
                 var $showDistance17 = document.getElementById('distance17'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
@@ -1807,7 +1807,7 @@
                 }
 
                 var $showDistance18 = document.getElementById('distance18'),
-                        $showTotal = document.getElementById('total'),
+                        // $showTotal = document.getElementById('total'),
                         $p1 = {
                                 'lat': 37.9963919,
                                 'lon': -78.5341101
