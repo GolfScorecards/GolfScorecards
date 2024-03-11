@@ -396,11 +396,11 @@ function refreshGPSrangeFinder() {
     document.getElementById("buttonRangeFinderDelay").style.display = "block"; 
     setTimeout(function () { 
         distanceFinder1(); distanceFinder2(); distanceFinder3(); distanceFinder4(); distanceFinder5(); distanceFinder6(); distanceFinder7(); distanceFinder8(); distanceFinder9(); distanceFinder10(); distanceFinder11(); distanceFinder12(); distanceFinder13(); distanceFinder14(); distanceFinder15(); distanceFinder16(); distanceFinder17(); distanceFinder18();
-    }, 10000);
+    }, 9000);
 
     setTimeout(function () {
         document.getElementById("buttonRangeFinderDelay").innerHTML = '<b>Scorecard with GPS Range Finder</b>';
-    }, 11000);
+    }, 9000);
 }
 
 
