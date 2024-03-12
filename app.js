@@ -404,6 +404,31 @@ function refreshGPSrangeFinder() {
 }
 
 
+// duplicate text field to back9 names
+function duplicateName() {
+    $('#golfer_name1').keyup(function () {
+        var text = $(this).val();
+        console.log(text)
+        document.getElementById("golfer_name_outputRow5").value = text;
+    });
+    $('#golfer_name2').keyup(function () {
+        var text = $(this).val();
+        console.log(text)
+        document.getElementById("golfer_name_outputRow6").value = text;
+    });
+    $('#golfer_name3').keyup(function () {
+        var text = $(this).val();
+        console.log(text)
+        document.getElementById("golfer_name_outputRow7").value = text;
+    });
+    $('#golfer_name4').keyup(function () {
+        var text = $(this).val();
+        console.log(text)
+        document.getElementById("golfer_name_outputRow8").value = text;
+    });
+}
+
+
 ///////////////////////////////////
 
 // Links to resources
