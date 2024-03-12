@@ -172,8 +172,6 @@ color: white;
 text-align: left;
 }
 
-/* distance */
-
 
 .bothScorecardsWrapper {
     display: block;
@@ -415,7 +413,7 @@ a.active {
 input[type=text],
 input[type=password] {
     /* width: 30%; */
-    padding: 5px;
+    padding: 5px 1px;
     margin: 5px 0;
     display: inline-block;
     /* border: 1px solid #ccc; */
@@ -1503,7 +1501,7 @@ footer {
 #total6,
 #total7,
 #total8 {
-    padding: 5px 5px;
+    padding: 5px 1px;
     margin: 5px 0px;
 }
 
@@ -1571,6 +1569,8 @@ footer {
 
 .horizontalInput {
     width: 100%;
+    /* border-radius: 7px; */
+    font-size: 12px;
 }
 
 .accountprofile {
