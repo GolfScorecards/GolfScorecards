@@ -452,7 +452,7 @@ function duplicateNamePar() {
     
     var ParDifference = textTotal5 - 72;
 
-    document.getElementById("totalScore5").innerHTML = text1 + " is above/under par by " + ParDifference;
+    document.getElementById("totalScore5").innerHTML = text1 + " - golfer 1 is above/under par by " + ParDifference;
 
 // golfer2
     var text2 = $('#golfer_name2').val();
@@ -461,7 +461,7 @@ function duplicateNamePar() {
 
     var ParDifference = textTotal6 - 72;
 
-    document.getElementById("totalScore6").innerHTML = text2 + " is above/under par by " + ParDifference;
+    document.getElementById("totalScore6").innerHTML = text2 + "  - golfer 2 is above/under par by " + ParDifference;
 
 // golfer3
     var text3 = $('#golfer_name3').val();
@@ -470,7 +470,7 @@ function duplicateNamePar() {
    
     var ParDifference = textTotal7 - 72;
 
-    document.getElementById("totalScore7").innerHTML = text3 + " is above/under par by " + ParDifference;
+    document.getElementById("totalScore7").innerHTML = text3 + "  - golfer 3 is above/under par by " + ParDifference;
 
 // golfer4
     var text4 = $('#golfer_name4').val();
@@ -479,7 +479,7 @@ function duplicateNamePar() {
     
     var ParDifference = textTotal8 - 72;
 
-    document.getElementById("totalScore8").innerHTML = text4 + " is above/under par by " + ParDifference;
+    document.getElementById("totalScore8").innerHTML = text4 + "  - golfer 4 is above/under par by " + ParDifference;
 
 
 
