@@ -439,7 +439,7 @@ function openNavCookiesPar() {
 }
 function closeNavCookiesPar() {
     document.getElementById("mySidenavCookiesPar").style.display = "none";
-    console.log("Closed Cookie Policy")
+    console.log("Closed Par Summary")
 }
 
 function duplicateNamePar() {
@@ -447,39 +447,60 @@ function duplicateNamePar() {
 
     // golfer1
     var text1 = $('#golfer_name1').val();
-     
     var textTotal5 = $('#grandtotal5').val();
-    
     var ParDifference = textTotal5 - 72;
+    if(ParDifference>0){
+        var parTextAbove = "above" 
+        var parTextBelow= ""
+    }
+    if (ParDifference < 0) {
+        var parTextBelow = "below"
+        var parTextAbove = ""
+    }
 
-    document.getElementById("totalScore5").innerHTML = text1 + " - golfer 1 is above/under par by " + ParDifference;
+    document.getElementById("totalScore5").innerHTML = text1 + " - golfer 1 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer2
     var text2 = $('#golfer_name2').val();
- 
     var textTotal6 = $('#grandtotal6').val();
-
     var ParDifference = textTotal6 - 72;
-
-    document.getElementById("totalScore6").innerHTML = text2 + "  - golfer 2 is above/under par by " + ParDifference;
+    if (ParDifference > 0) {
+        var parTextAbove = "above"
+        var parTextBelow = ""
+    }
+    if (ParDifference < 0) {
+        var parTextBelow = "below"
+        var parTextAbove = ""
+    }
+    document.getElementById("totalScore6").innerHTML = text2 + "  - golfer 2 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer3
     var text3 = $('#golfer_name3').val();
-   
     var textTotal7 = $('#grandtotal7').val();
-   
     var ParDifference = textTotal7 - 72;
-
-    document.getElementById("totalScore7").innerHTML = text3 + "  - golfer 3 is above/under par by " + ParDifference;
+    if (ParDifference > 0) {
+        var parTextAbove = "above"
+        var parTextBelow = ""
+    }
+    if (ParDifference < 0) {
+        var parTextBelow = "below"
+        var parTextAbove = ""
+    }
+    document.getElementById("totalScore7").innerHTML = text3 + "  - golfer 3 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer4
     var text4 = $('#golfer_name4').val();
-   
     var textTotal8 = $('#grandtotal8').val();
-    
     var ParDifference = textTotal8 - 72;
-
-    document.getElementById("totalScore8").innerHTML = text4 + "  - golfer 4 is above/under par by " + ParDifference;
+    if (ParDifference > 0) {
+        var parTextAbove = "above"
+        var parTextBelow = ""
+    }
+    if (ParDifference < 0) {
+        var parTextBelow = "below"
+        var parTextAbove = ""
+    }
+    document.getElementById("totalScore8").innerHTML = text4 + "  - golfer 4 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 
 
