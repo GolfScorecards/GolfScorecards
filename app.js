@@ -409,8 +409,11 @@ function duplicateName() {
     $('#golfer_name1').keyup(function () {
         var text = $(this).val();
         console.log(text)
-        document.getElementById("golfer_name_outputRow5").value = text;
+       document.getElementById("golfer_name_outputRow5").value = text;
+    //    document.getElementById("golfer_name_outputRow5Par").text = text;
+    //     console.log(document.getElementById("golfer_name_outputRow5Par").text)    
     });
+
     $('#golfer_name2').keyup(function () {
         var text = $(this).val();
         console.log(text)
@@ -429,6 +432,60 @@ function duplicateName() {
 }
 
 
+//par total update summary
+// closeNavCookies
+function openNavCookiesPar() {
+    document.getElementById("mySidenavCookiesPar").style.display = "block";
+}
+function closeNavCookiesPar() {
+    document.getElementById("mySidenavCookiesPar").style.display = "none";
+    console.log("Closed Cookie Policy")
+}
+
+function duplicateNamePar() {
+    document.getElementById("mySidenavCookiesParDiv").style.display = "block";
+
+    // golfer1
+    var text1 = $('#golfer_name1').val();
+     
+    var textTotal5 = $('#grandtotal5').val();
+    
+    var ParDifference = textTotal5 - 72;
+
+    document.getElementById("totalScore5").innerHTML = text1 + " is above/under par by " + ParDifference;
+
+// golfer2
+    var text2 = $('#golfer_name2').val();
+ 
+    var textTotal6 = $('#grandtotal6').val();
+
+    var ParDifference = textTotal6 - 72;
+
+    document.getElementById("totalScore6").innerHTML = text2 + " is above/under par by " + ParDifference;
+
+// golfer3
+    var text3 = $('#golfer_name3').val();
+   
+    var textTotal7 = $('#grandtotal7').val();
+   
+    var ParDifference = textTotal7 - 72;
+
+    document.getElementById("totalScore7").innerHTML = text3 + " is above/under par by " + ParDifference;
+
+// golfer4
+    var text4 = $('#golfer_name4').val();
+   
+    var textTotal8 = $('#grandtotal8').val();
+    
+    var ParDifference = textTotal8 - 72;
+
+    document.getElementById("totalScore8").innerHTML = text4 + " is above/under par by " + ParDifference;
+
+
+
+}
+
+
 ///////////////////////////////////
 
 // Links to resources
@@ -436,8 +493,9 @@ function duplicateName() {
 //Location distance example - from jsfiddle.com with lat lon distance calculation helpful for the golf course distance in yards. Example of css, html, js, very helpful for golf course distances in yardage, distance from the tee to the green, or anywhere on golf course.
 
 //google also had google docs for example of API with distance map plug in. Next time use Distance() plug in with with google maps from google how to videos with maps API docs. very helpful.
-
 //https://jsfiddle.net/vitorbritto/s7btq7xj/
+
+//heroku error solution:
 // https://stackoverflow.com/questions/5450930/heroku-postgres-error-pgerror-error-relation-organizations-does-not-exist
 
 // https://www.w3schools.com/tags/tag_th.asp
