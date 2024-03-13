@@ -458,7 +458,7 @@ function duplicateNamePar() {
         var parTextAbove = ""
     }
 
-    document.getElementById("totalScore5").innerHTML = text1 + " - golfer 1 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    document.getElementById("totalScore5").innerHTML = text1 + " - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer2
     var text2 = $('#golfer_name2').val();
@@ -472,7 +472,7 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore6").innerHTML = text2 + "  - golfer 2 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    document.getElementById("totalScore6").innerHTML = text2 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer3
     var text3 = $('#golfer_name3').val();
@@ -486,7 +486,7 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore7").innerHTML = text3 + "  - golfer 3 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    document.getElementById("totalScore7").innerHTML = text3 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 // golfer4
     var text4 = $('#golfer_name4').val();
@@ -500,7 +500,7 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore8").innerHTML = text4 + "  - golfer 4 is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    document.getElementById("totalScore8").innerHTML = text4 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
 
 
 
