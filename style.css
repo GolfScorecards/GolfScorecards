@@ -175,7 +175,7 @@ text-align: left;
 
 .bothScorecardsWrapper {
     display: block;
-    height: 650px;
+    height: 700px;
     background-color: #1d6b93;
 }
 
@@ -1013,6 +1013,10 @@ label:before {
     display: fixed;
 }
 
+.displaySquaresPar {
+    display: none;
+}
+
 
 
 .updateGolferToHide2 {
@@ -1163,6 +1167,14 @@ label:before {
     width: 100%;
     position: top;
 }
+
+#mySidenavCookiesPar {
+        height: auto;
+        display: none;
+        display: block;
+        width: 100%;
+        position: top;
+    }
 
 
 
@@ -1504,6 +1516,8 @@ footer {
     padding: 5px 1px;
     margin: 5px 0px;
 }
+
+
 
 .scorecardLogoGrey {
     background-color: #78c1f3;
