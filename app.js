@@ -457,8 +457,11 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-
-    document.getElementById("totalScore5").innerHTML = text1 + " - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    if (text1 !== "") {
+        document.getElementById("totalScore5").innerHTML = text1 + " : is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    } else {
+        document.getElementById("totalScore5").innerHTML = "";
+    }
 
 // golfer2
     var text2 = $('#golfer_name2').val();
@@ -472,7 +475,11 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore6").innerHTML = text2 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    if (text2 !== "") {
+        document.getElementById("totalScore6").innerHTML = text2 + " : is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    } else {
+        document.getElementById("totalScore6").innerHTML = "";
+    }
 
 // golfer3
     var text3 = $('#golfer_name3').val();
@@ -486,7 +493,11 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore7").innerHTML = text3 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    if (text3 !== "") {
+        document.getElementById("totalScore7").innerHTML = text3 + " : is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    } else {
+        document.getElementById("totalScore7").innerHTML = "";
+    }
 
 // golfer4
     var text4 = $('#golfer_name4').val();
@@ -500,11 +511,17 @@ function duplicateNamePar() {
         var parTextBelow = "below"
         var parTextAbove = ""
     }
-    document.getElementById("totalScore8").innerHTML = text4 + "  - is " + parTextAbove + parTextBelow + " par by " + ParDifference;
-
-
+    if (text4 !== "") {
+        document.getElementById("totalScore8").innerHTML = text4 + " : is " + parTextAbove + parTextBelow + " par by " + ParDifference;
+    } else {
+        document.getElementById("totalScore8").innerHTML = "";
+    }
 
 }
+// End of par total update summary
+
+
+
 
 
 ///////////////////////////////////
