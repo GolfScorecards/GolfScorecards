@@ -26,11 +26,18 @@ function closeMenuNav() {
 }
 
 function openWeatherNav() {
-    document.getElementById("mySidenavWeather").style.width = "250px";
+    document.getElementById("weatherWidget").style.display = "block";
+    document.getElementById("buttonWeatherOpen").style.display = "none";
+    document.getElementById("buttonWeatherClose").style.display = "block";
 }
 function closeWeatherNav() {
-    document.getElementById("mySidenavWeather").style.width = "0";
+    document.getElementById("weatherWidget").style.display = "none";
+    document.getElementById("buttonWeatherClose").style.display = "block";
+    document.getElementById("buttonWeatherOpen").style.display = "block";
+    document.getElementById("buttonWeatherClose").style.display = "none";
+    
 }
+
 
 function openLeaderBoardNav() {
     document.getElementById("mySidenavLeaderBoard").style.width = "100%";
