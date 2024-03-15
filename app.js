@@ -37,6 +37,19 @@ function closeWeatherNav() {
     document.getElementById("buttonWeatherClose").style.display = "none";
     
 }
+function openGolfAI() {
+    document.getElementById("golfChatBot").style.display = "block";
+    document.getElementById("buttonOpenGolfAI").style.display = "none";
+    document.getElementById("buttonCloseGolfAI").style.display = "block";
+}
+function closeGolfAI() {
+    document.getElementById("golfChatBot").style.display = "none";
+    document.getElementById("buttonCloseGolfAI").style.display = "block";
+    document.getElementById("buttonOpenGolfAI").style.display = "block";
+    document.getElementById("buttonCloseGolfAI").style.display = "none";
+
+}
+
 
 
 function openLeaderBoardNav() {
