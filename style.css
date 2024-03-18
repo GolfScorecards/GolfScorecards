@@ -174,9 +174,13 @@ text-align: left;
 
 
 .bothScorecardsWrapper {
+    box-shadow: 1px 1px 20px #000000;
+    border-radius: 10px;
+    margin: 10px;
     display: block;
-    height: 700px;
+    height: 730px;
     background-color: #1d6b93;
+
 }
 
 #buttonRangeFinderDelay {
@@ -518,6 +522,7 @@ input[type=password] {
 }
 
 .digitalScorecardFront9 {
+    border-radius: 10px;
     background-color: #1d6b93;
     color: white;
     margin-left: 0px;
@@ -1539,6 +1544,7 @@ footer {
 }
 
 .horizontalScorecard {
+    border-radius: 10px;
     background-color: #1d6b93;
     width: 100%;
     display: flex;
