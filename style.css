@@ -453,23 +453,18 @@ input[type=password] {
 
 
 .addCourseMap{
-    height:100px;
+    box-shadow: 1px 1px 20px #000000;
+    border-radius: 10px;
+    margin: 20px 20px;
     background-color: #78c1f3;
-    padding: 135px 5px 40px 5px;
-    margin: 0px 0px;
     color: white;
-        font-size: 18px;
-        font-weight: 600;
-        font-style: italic;
-        text-shadow: black 1px 0 10px;
-        text-align: center;
-        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif; */
-        /* color: black; */
-        /* margin-left: 5px; */
-        /* margin-right: 5px; */
-        /* margin-top: 5px; */
-        /* margin-bottom: 0px; */
-        /* padding: 10px; */
+    height:100px;
+    padding: 135px 5px 90px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: black 1px 0 10px;
+    text-align: center;
 }
 
 .addCourseMap2 {
@@ -1102,10 +1097,10 @@ label:before {
 
 .optionsSection {
     height: auto;
-        background-color: #1d6b93;
+        background-color: white;
         padding: 5px 5px 5px 5px;
         margin: 0px 0px;
-        color: white;
+        color: black;
         font-size: 9px;
         /* font-weight: 600; */
         font-style: italic;
@@ -1520,19 +1515,16 @@ footer {
     margin: 5px 0px;
 }
 
-
-
 .scorecardLogoGrey {
-    background-color: #78c1f3;
+    box-shadow: 1px 1px 20px #000000;
+    border-radius: 10px;
+    width:30%;
+    margin: 10px 35% 10px 35%;
+    background-color: #1d6b93;
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
-    text-shadow: black 1px 0 10px;
     color: white;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     padding: 10px;
     text-align: center;
 }
