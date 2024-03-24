@@ -174,7 +174,7 @@ text-align: left;
 
 
 .bothScorecardsWrapper {
-    box-shadow: 1px 1px 20px #000000;
+    /* box-shadow: 1px 1px 20px #000000; */
     border-radius: 10px;
     margin: 10px;
     display: block;
@@ -453,7 +453,7 @@ input[type=password] {
 
 
 .addCourseMap{
-    box-shadow: 1px 1px 20px #000000;
+    /* box-shadow: 1px 1px 20px #000000; */
     border-radius: 10px;
     margin: 20px 20px;
     background-color: #78c1f3;
@@ -1517,7 +1517,7 @@ footer {
 }
 
 .scorecardLogoGrey {
-    box-shadow: 1px 1px 20px #000000;
+    /* box-shadow: 1px 1px 20px #000000; */
     border-radius: 10px;
     width: 50%;
     margin: 10px auto 10px auto;
