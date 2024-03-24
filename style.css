@@ -1518,8 +1518,8 @@ footer {
 .scorecardLogoGrey {
     box-shadow: 1px 1px 20px #000000;
     border-radius: 10px;
-    width:30%;
-    margin: 10px 35% 10px 35%;
+    width: 50%;
+    margin: 10px 25% 10px 25%;
     background-color: #1d6b93;
     font-size: 18px;
     font-weight: 600;
