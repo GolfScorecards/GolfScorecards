@@ -1096,10 +1096,11 @@ label:before {
 }
 
 .optionsSection {
-    height: auto;
+        height: auto;
+        width: 110px;
         background-color: white;
         padding: 5px 5px 5px 5px;
-        margin: 0px 0px;
+        margin: auto auto;
         color: black;
         font-size: 9px;
         /* font-weight: 600; */
@@ -1519,7 +1520,7 @@ footer {
     box-shadow: 1px 1px 20px #000000;
     border-radius: 10px;
     width: 50%;
-    margin: 10px 25% 10px 25%;
+    margin: 10px auto 10px auto;
     background-color: #1d6b93;
     font-size: 18px;
     font-weight: 600;
