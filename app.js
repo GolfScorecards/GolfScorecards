@@ -390,6 +390,16 @@ function closeSubscribePopUp() {
     console.log("Closed logoSubscribePopUp")
 }
 
+// freeTrialButton
+function openSubscribePopUpFreeTrial() {
+    document.getElementById("logoSubscribeButton1FreeTrial").style.display = "block";
+    console.log("Opened logoSubscribePopUpFreeTrial")
+}
+function closeSubscribePopUpFreeTrial() {
+    document.getElementById("logoSubscribeButton1FreeTrial").style.display = "none";
+    console.log("Closed logoSubscribePopUpFreeTrial")
+}
+
 
 // timer for exipred time on free preview
 
