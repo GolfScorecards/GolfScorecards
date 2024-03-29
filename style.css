@@ -125,6 +125,7 @@ main {
 
 .IndexScorecardsubmitAddBtnLogo {
         width: 50%;
+        max-width: 270px;
         height: 40px;
         padding: 0px 20px;
         margin: 10px 0% 5px 0%;
@@ -1215,6 +1216,25 @@ label:before {
 }
 
 #logoSubscribeButton1 {
+    display: none;
+    height: 88%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 10%;
+    bottom: 10%;
+    /* right: 0; */
+    background-color: #DFDFDF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: left;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 1px;
+    max-width: 650px;
+}
+
+#logoSubscribeButton1FreeTrial {
     display: none;
     height: 88%;
     width: 100%;
