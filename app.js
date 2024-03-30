@@ -35,7 +35,7 @@ function closeWeatherNav() {
     document.getElementById("buttonWeatherClose").style.display = "block";
     document.getElementById("buttonWeatherOpen").style.display = "block";
     document.getElementById("buttonWeatherClose").style.display = "none";
-    
+
 }
 function openGolfAI() {
     document.getElementById("golfChatBot").style.display = "block";
@@ -74,6 +74,59 @@ function closeEditGolferCourseNav() {
     document.getElementById("mySidenavEditGolferCourse").style.width = "0";
 }
 
+
+
+// Start Par Sum ============================
+
+
+    var parHoleNum0 = parseInt(document.getElementsByName('parHole')[0].innerText);
+    var parHoleNum1 = parseInt(document.getElementsByName('parHole')[1].innerText);
+    var parHoleNum2 = parseInt(document.getElementsByName('parHole')[2].innerText);
+    var parHoleNum3 = parseInt(document.getElementsByName('parHole')[3].innerText);
+    var parHoleNum4 = parseInt(document.getElementsByName('parHole')[4].innerText);
+    var parHoleNum5 = parseInt(document.getElementsByName('parHole')[5].innerText);
+    var parHoleNum6 = parseInt(document.getElementsByName('parHole')[6].innerText);
+    var parHoleNum7 = parseInt(document.getElementsByName('parHole')[7].innerText);
+    var parHoleNum8 = parseInt(document.getElementsByName('parHole')[8].innerText);
+    var parHoleNum9 = parseInt(document.getElementsByName('parHole')[9].innerText);
+    var parHoleNum10 = parseInt(document.getElementsByName('parHole')[10].innerText);
+    var parHoleNum11 = parseInt(document.getElementsByName('parHole')[11].innerText);
+    var parHoleNum12 = parseInt(document.getElementsByName('parHole')[12].innerText);
+    var parHoleNum13 = parseInt(document.getElementsByName('parHole')[13].innerText);
+    var parHoleNum14 = parseInt(document.getElementsByName('parHole')[14].innerText);
+    var parHoleNum15 = parseInt(document.getElementsByName('parHole')[15].innerText);
+    var parHoleNum16 = parseInt(document.getElementsByName('parHole')[16].innerText);
+    var parHoleNum17 = parseInt(document.getElementsByName('parHole')[17].innerText);
+   
+    var sumParCourse = 
+        (parHoleNum0 +
+        parHoleNum1 +
+        parHoleNum2 +
+        parHoleNum3 +
+        parHoleNum4 +
+        parHoleNum5 +
+        parHoleNum6 +
+        parHoleNum7 +
+        parHoleNum8 +
+        parHoleNum9 +
+        parHoleNum10 +
+        parHoleNum11 +
+        parHoleNum12 +
+        parHoleNum13 +
+        parHoleNum14 +
+        parHoleNum15 +
+        parHoleNum16 +
+        parHoleNum17);
+
+    document.getElementById("totalParCourse").innerHTML = "Total Course Par: " + sumParCourse;
+   
+    function sumParCourseTotal() {
+        console.log("Function sumParCourse: " + document.getElementById("totalParCourse").innerHTML)
+    // sum of above variables
+    };
+
+// End Par Sum =============================
+// par summary continues below line 514
 
 
 
@@ -227,7 +280,7 @@ this.sumGrandTotal = function () {
         inputs8 = document.getElementsByName('row8'),
         result4 = document.getElementById('grandtotal8'),
 
-    sum1 = 0;
+        sum1 = 0;
     sum2 = 0;
     sum3 = 0;
     sum4 = 0;
@@ -423,8 +476,8 @@ function closeCounter() {
 
 function refreshGPSrangeFinder() {
     document.getElementById("buttonRangeFinderDelay").innerHTML = '<b>Loading GPS distance...</b>';
-    document.getElementById("buttonRangeFinderDelay").style.display = "block"; 
-    setTimeout(function () { 
+    document.getElementById("buttonRangeFinderDelay").style.display = "block";
+    setTimeout(function () {
         distanceFinder1(); distanceFinder2(); distanceFinder3(); distanceFinder4(); distanceFinder5(); distanceFinder6(); distanceFinder7(); distanceFinder8(); distanceFinder9(); distanceFinder10(); distanceFinder11(); distanceFinder12(); distanceFinder13(); distanceFinder14(); distanceFinder15(); distanceFinder16(); distanceFinder17(); distanceFinder18();
     }, 9000);
 
@@ -439,9 +492,9 @@ function duplicateName() {
     $('#golfer_name1').keyup(function () {
         var text = $(this).val();
         console.log(text)
-       document.getElementById("golfer_name_outputRow5").value = text;
-    //    document.getElementById("golfer_name_outputRow5Par").text = text;
-    //     console.log(document.getElementById("golfer_name_outputRow5Par").text)    
+        document.getElementById("golfer_name_outputRow5").value = text;
+        //    document.getElementById("golfer_name_outputRow5Par").text = text;
+        //     console.log(document.getElementById("golfer_name_outputRow5Par").text)    
     });
 
     $('#golfer_name2').keyup(function () {
@@ -462,8 +515,7 @@ function duplicateName() {
 }
 
 
-//par total update summary
-// closeNavCookies
+//par summary popup 
 function openNavCookiesPar() {
     document.getElementById("mySidenavCookiesPar").style.display = "block";
 }
@@ -478,10 +530,10 @@ function duplicateNamePar() {
     // golfer1
     var text1 = $('#golfer_name1').val();
     var textTotal5 = $('#grandtotal5').val();
-    var ParDifference = textTotal5 - 72;
-    if(ParDifference>0){
-        var parTextAbove = "above" 
-        var parTextBelow= ""
+    var ParDifference = textTotal5 - sumParCourse;
+    if (ParDifference > 0) {
+        var parTextAbove = "above"
+        var parTextBelow = ""
     }
     if (ParDifference < 0) {
         var parTextBelow = "below"
@@ -493,10 +545,10 @@ function duplicateNamePar() {
         document.getElementById("totalScore5").innerHTML = "";
     }
 
-// golfer2
+    // golfer2
     var text2 = $('#golfer_name2').val();
     var textTotal6 = $('#grandtotal6').val();
-    var ParDifference = textTotal6 - 72;
+    var ParDifference = textTotal6 - sumParCourse;
     if (ParDifference > 0) {
         var parTextAbove = "above"
         var parTextBelow = ""
@@ -511,10 +563,10 @@ function duplicateNamePar() {
         document.getElementById("totalScore6").innerHTML = "";
     }
 
-// golfer3
+    // golfer3
     var text3 = $('#golfer_name3').val();
     var textTotal7 = $('#grandtotal7').val();
-    var ParDifference = textTotal7 - 72;
+    var ParDifference = textTotal7 - sumParCourse;
     if (ParDifference > 0) {
         var parTextAbove = "above"
         var parTextBelow = ""
@@ -529,10 +581,10 @@ function duplicateNamePar() {
         document.getElementById("totalScore7").innerHTML = "";
     }
 
-// golfer4
+    // golfer4
     var text4 = $('#golfer_name4').val();
     var textTotal8 = $('#grandtotal8').val();
-    var ParDifference = textTotal8 - 72;
+    var ParDifference = textTotal8 - sumParCourse;
     if (ParDifference > 0) {
         var parTextAbove = "above"
         var parTextBelow = ""
@@ -612,4 +664,3 @@ function duplicateNamePar() {
 
 // css
 // https://www.w3schools.com/
-

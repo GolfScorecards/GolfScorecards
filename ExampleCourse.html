@@ -2,42 +2,32 @@
 <html lang="en" >
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta property="og:url" content="https://www.golfscorecardsapp.com/"> -->
-    <meta property="og:type" content="website">
+       
+        <meta charset="UTF-8">
+        <meta property="og:type" content="website">
         <meta property="og:title" content="golfAppycards">
         <meta property="og:description" content="golfAppycards">
         <meta property="og:image" content="https://imgtr.ee/images/2023/02/21/RyD0B.jpg">
-    <meta property="twitter:title" content="golfAppycards">
-    <meta property="twitter:description" content="golfAppycards">
-    <meta property="twitter:image" content="https://imgtr.ee/images/2023/02/21/RyD0B.jpg">
-    <meta name="twitter:card" content="summary_medium_image">
-    <meta name="twitter:site" content="@website-ScorecardsGolf">
-    <!-- <meta property="og:image:type" content="image/jpg"> -->
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- google font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <!-- animations -->
-    <!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
-    <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
-    <!-- end of animations -->
+        <meta property="twitter:title" content="golfAppycards">
+        <meta property="twitter:description" content="golfAppycards">
+        <meta property="twitter:image" content="https://imgtr.ee/images/2023/02/21/RyD0B.jpg">
+        <meta name="twitter:card" content="summary_medium_image">
+        <meta name="twitter:site" content="@website-ScorecardsGolf">
+        <meta property="og:image:width" content="200">
+        <meta property="og:image:height" content="200">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <link href="favicon2.png" rel="shortcut icon" type="image/x-icon" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 
-<!-- google ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7618266484328180"
-        crossorigin="anonymous"></script>
-    
-    <title>golfAppycards</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+        <title>golfAppycards</title>
 </head>
 
 <body>
@@ -77,15 +67,6 @@
 
                 </div>
 
-                <!-- <div > -->
-
-                <!-- <a href="/">Home</a> -->
-                <!-- <a ng-if='ctrl.user' class="aTagTopNav" href="/scorecards">My Scorecards</a> -->
-                <!-- <a class="aTagTopNav" onclick="openWeatherNav()">Weather</a> -->
-
-                <!-- three lines icon -->
-                <!-- <a class="threeLines" onclick="openMenuNav()">&#9776;</a> -->
-                <!-- </div> -->
             </div>
 
             <!-- end of top nav bar -->
@@ -116,11 +97,6 @@
 </div>
 
 
-
-
-
-
-
         <br><br><br>
 
 </div>
@@ -141,15 +117,15 @@
                 <div class="clickableSum">
                 <div class="horizontalScorecardboxDetails">
                         <div class="horizontalScorecardboxName" style="padding-left: 5px;">Par</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
                 </div>
                 <div class="horizontalScorecardboxDetails">
                         <div class="horizontalScorecardboxName" style="padding-left: 5px;">Long Yards</div>
@@ -497,7 +473,8 @@
 <!-- start of par summary -->
 <div class="IndexScorecardsubmitAddBtn"
         style="width: 30%; font-size: 12px; margin:5px auto 0px; display: block; text-align: center;"
-        onclick="openNavCookiesPar(); duplicateNamePar();">Open Par Summary</div>
+        onclick="openNavCookiesPar(); duplicateNamePar();
+        sumParCourseTotal();">Open Par Summary</div>
 
 <br>
 
@@ -513,9 +490,10 @@
                                 </div>
                 
                 <div class="holeNumber">
-                        <h4>Total Course Par: 72</h4>
+                        <!--  Par Sum Function Result-->
+                        <div id="totalParCourse" ></div>
+
                         <h4>Name:</h4>
-                
                         <div style="font-size: 14px;">
                                 <!-- golfer1 -->
                                 <div id="golfer_name_outputRow5Par"></div>
@@ -552,15 +530,15 @@
                 <div class="clickableSum">
                 <div class="horizontalScorecardboxDetails">
                         <div class="horizontalScorecardboxName" style="padding-left: 5px;">Par</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
-                        <div class="horizontalScorecardbox">-</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
+                        <div name="parHole" class="horizontalScorecardbox">3</div>
                         <div class="horizontalScorecardbox"></div>
                         <div class="horizontalScorecardbox"></div>
                 </div>
@@ -911,6 +889,13 @@
             <!-- end of ScorecardWrapperBox -->         
 </div>
 <!-- end of bothScorecardsWrapper -->
+
+
+
+
+
+
+
 
 <div
         style="font-size: 12px; font-weight: 200; font-style: normal; text-align: center; color: black; margin: 10px 10px; font-weight: 600;">
@@ -1932,4 +1917,5 @@
 
 
 </script>
+<script type="text/javascript" src="app.js"></script>
 </body>
