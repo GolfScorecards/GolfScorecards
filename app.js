@@ -125,8 +125,9 @@ function closeEditGolferCourseNav() {
     // sum of above variables
     };
 
+
 // End Par Sum =============================
-// par summary continues below line 514
+// par summary continues below line 519
 
 
 
@@ -452,6 +453,21 @@ function closeSubscribePopUpFreeTrial() {
     document.getElementById("logoSubscribeButton1FreeTrial").style.display = "none";
     console.log("Closed logoSubscribePopUpFreeTrial")
 }
+
+
+// openGolfClubRanges
+function openGolfClubRanges() {
+    document.getElementById("golfClubRanges").style.display = "block";
+    console.log("Opened golfClubRanges")
+}
+function closeGolfClubRanges() {
+    document.getElementById("golfClubRanges").style.display = "none";
+    console.log("Closed golfClubRanges")
+}
+
+
+
+
 
 
 // timer for exipred time on free preview

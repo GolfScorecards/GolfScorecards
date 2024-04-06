@@ -156,8 +156,8 @@ View Example Scorecard
 <div style="background-image: url(iPhoneScorecard.png); background-size: cover; background-repeat: no-repeat;height: 450px;
 max-width: 320px;
 margin: auto auto;">
-
 </div>
+
 <div style="background-image: url(iPhoneScorecard2.png); background-size: cover; background-repeat: no-repeat;height: 450px;
 max-width: 224px;
 margin: auto auto;">
@@ -541,14 +541,21 @@ border-radius: 2px;
 
 <h3 class="digitalScorecardBack9" style="color:#2274A5 ;">.</h3>
 
-<!-- start of par summary -->
+<!-- start buttons for ParSummary and GolfClubRanges -->
 <div class="IndexScorecardsubmitAddBtn"
 style="width: 30%; font-size: 12px; margin:5px auto 0px; display: block; text-align: center;" onclick="openNavCookiesPar(); duplicateNamePar();
 sumParCourseTotal();">Open Par Summary</div>
 
 <br>
 
+<div class="IndexScorecardsubmitAddBtn"
+        style="width: 36%; font-size: 12px; margin:5px auto 0px; display: block; text-align: center;" onclick="openGolfClubRanges();">Open Golf Club Ranges</div>
 
+<br>
+<!-- end of buttons for ParSummary and GolfClubRanges -->
+
+
+<!-- start of Par Summary -->
 <div class="displaySquaresPar" id="mySidenavCookiesParDiv">
 <div id="mySidenavCookiesPar" class="sidenavCookies">
 
@@ -592,6 +599,38 @@ sumParCourseTotal();">Open Par Summary</div>
 </div>
 </div>
 <!-- end of par summary -->
+
+
+
+<!-- start of Golf Club Ranges -->
+<div class="displaySquaresPar" id="golfClubRanges">
+        <div id="golfClubRangesDiv" class="sidenavCookies">
+
+        <div class="closeXButton" onclick="closeGolfClubRanges()"></div>
+        <div class="bottomCookiePolicyPopup">
+                <div class="topOfPopUp">
+                <div class="holeNumber">
+                        <h3>Golf Club Ranges (average yards)</h3>
+                </div>
+                        <div style="background-image: url(GolfClubRanges.png); background-size: cover; background-repeat: no-repeat;
+                        height: 222px;
+                        width: 290px;
+                        margin: auto auto;">
+                        </div>
+                        <br>
+                </div>
+
+                <div class="bottomOfPopUp">
+                        <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                                onclick="closeGolfClubRanges();">
+                                Close</button>
+                        <br>
+                </div>
+        </div>
+        </div>
+</div>
+<!-- end of Golf Club Ranges -->
+
 
 <h3 class="digitalScorecardBack9">Back 9</h3>
 <!-- start of Back 9 scorecard div -->
