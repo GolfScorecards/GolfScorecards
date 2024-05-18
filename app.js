@@ -540,6 +540,16 @@ function closeNavCookiesPar() {
     console.log("Closed Par Summary")
 }
 
+//Sponsor Payment Popup 
+function openSponsorSignUp() {
+    document.getElementById("theSponsorSignUp").style.display = "block";
+    console.log("Opened SponsorSignUp")
+}
+function closeSponsorSignUp() {
+    document.getElementById("theSponsorSignUp").style.display = "none";
+    console.log("Closed SponsorSignUp")
+}
+
 function duplicateNamePar() {
     document.getElementById("mySidenavCookiesParDiv").style.display = "block";
 

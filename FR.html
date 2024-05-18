@@ -100,7 +100,7 @@
                         <br> Les abonnés reçoivent :
                         <br> -Carte de pointage numérique
                         <br> -Avec leur Logo, Par, Distances
-                        <br> -Carte du cours
+                        <br> -Carte du parcours
                         <br> -Télémètre GPS
                         <br> -Code QR partageable
                         <br> -Technologie de somme instantanée
@@ -153,7 +153,7 @@ text-shadow: black 1px 0 10px;
                 <a style="float: none; font-size: 12px; margin: 5px auto; text-shadow: none;" href="ExampleCourseFR.html"
                     target="_blank" rel="noopener noreferrer">
                     <div style="width:40%; margin: 5px auto;" class="IndexScorecardsubmitAddBtn">
-                        Exemple: Carte de Score
+                        Exemple Carte de Score
                     </div>
                 </a>
                 <!-- end of button centered -->
@@ -559,7 +559,7 @@ sumParCourseTotal();">Ouvrir la Somme du Par</div>
 
                     <div class="IndexScorecardsubmitAddBtn"
                         style="width: 36%; font-size: 12px; margin:5px auto 0px; display: block; text-align: center;"
-                        onclick="openGolfClubRanges();">Distances des clubs de golf</div>
+                        onclick="openGolfClubRanges();">Distances</div>
 
                     <br>
                     <!-- end of buttons for ParSummary and GolfClubRanges -->
@@ -1033,16 +1033,16 @@ sumParCourseTotal();">Ouvrir la Somme du Par</div>
                 </div>
 
                 <br>
-                <div class="addCourseMap" style=" "> +Votre plan de cours ici+
+                <div class="addCourseMap" style=" "> +Votre plan du parcours ici+
                     <br><br>
 
 
                 </div>
                 <div class="optionsSection">
                     Les options incluent :
-                    <br>-Réviser pour le mini-golf
-                    <br>-Réviser pour les parcours de 9 trous
-                    <br>-Modifié pour afficher les distances longues, moyennes et courtes.
+                    <br>-Révision pour le mini-golf
+                    <br>-Révision pour les parcours de 9 trous
+                    <br>-Modification pour afficher les distances longues, moyennes et courtes.
                 </div>
                 <br>
 
@@ -1058,12 +1058,64 @@ sumParCourseTotal();">Ouvrir la Somme du Par</div>
                 </div>
                 <!-- end of scanQRBox -->
 
-                <br>
+               
             </div>
             <!-- end of mainTopnumber -->
 
         </div>
         <!-- end of main picture -->
+        <!-- start of Sponsor Sign up -->
+        <div style="background-color: lightgrey;">
+            <div style="text-align:center ; width: 70%; margin: auto auto; padding: 20px 20px;">
+                <h2>Devenez Sponsor</h2>
+                <h5>Faites apparaître votre Logo bien en évidence sur tous les Cartes de Score numériques.
+                    <br>
+                    Élevez la visibilité de votre marque.
+                </h5>
+                <br>
+                <button class="payHereButton" onclick="openSponsorSignUp()">Sponsor - Inscrivez-vous </button>
+        
+                <br>
+        
+            </div>
+        </div>
+        
+        <!-- Start of SponsorSignUp popup-->
+        <div class="displaySquaresPopUp">
+            <div id="theSponsorSignUp" class="logoSubscribePopUp">
+        
+                <div class="closeXButton" onclick="closeSponsorSignUp()"></div>
+                <div class="bottomCookiePolicyPopup">
+                    <div class="topOfPopUp">
+                        <div class="subscriptionPopUpWindow">
+        
+                            <h3 style="margin:0%">Devenez sponsor - Inscrivez-vous</h3>
+                            <br>
+        
+        
+                        </div>
+                    </div>
+        
+                    <div class="bottomOfPopUp">
+                        <div class="termsPaymentPopup">
+        
+                            Envoyez votre logo par email à : <h5 style="color: blue; text-decoration-line: underline;">
+                                golfAppycards@gmail.com</h5> Recevoir:
+                            <br>
+                            - Un devis pour le parrainage et les informations de paiement.
+                            <br>
+                            - Informations supplémentaires sur le sponsoring de nos cartes de score de golf numériques.
+                        </div>
+                    </div>
+                    <br><br><br><br><br>
+                    <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                        onclick="closeSponsorSignUp()">Fermer</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- end of SponsorSignUp -->
+
 
         <footer>
             <!-- <div class="footerdivparent"> -->
