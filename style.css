@@ -456,10 +456,10 @@ input[type=password] {
 .addCourseMap{
     /* box-shadow: 1px 1px 20px #000000; */
     border-radius: 10px;
-    margin: 20px 20px;
+    margin: 40px 40px;
     background-color: #78c1f3;
     color: white;
-    height:100px;
+    height:40px;
     padding: 135px 5px 90px 5px;
     font-size: 18px;
     font-weight: 600;
@@ -1098,12 +1098,12 @@ label:before {
 
 .optionsSection {
         height: auto;
-        width: 120px;
+        width: 40%;
         background-color: white;
         padding: 5px 5px 5px 5px;
-        margin: auto auto;
+        margin: auto 30%;
         color: black;
-        font-size: 9px;
+        font-size: 12px;
         /* font-weight: 600; */
         font-style: italic;
         /* text-shadow: white 1px 0 10px; */
