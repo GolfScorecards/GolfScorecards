@@ -50,6 +50,16 @@ function closeGolfAI() {
 
 }
 
+function openNav() {
+    "use strict";
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    "use strict";
+    document.getElementById("mySidenav").style.width = "0";
+}
+
 
 
 function openLeaderBoardNav() {

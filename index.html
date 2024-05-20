@@ -56,43 +56,55 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 <div class="topnav">
 
 <div class="topnav1">
-<a class="aTagTopNavDivLogo" style="font-size: 22px; "
-href="index.html">
+<div class="aTagTopNavDivLogo" style="font-size: 22px; width: 100%;">
 <div class="mainLogo"></div>
-</a>
-<br>
-
+</div>
+</div>
+</div>
 </div>
 
-<!-- <div > -->
 
-<!-- <a href="/">Home</a> -->
-<!-- <a class="aTagTopNav" onclick="openWeatherNav()">Weather</a> -->
-
-<!-- three lines icon -->
-<!-- <a class="threeLines" onclick="openMenuNav()">&#9776;</a> -->
-<!-- </div> -->
-</div>
-
-<!-- end of top nav bar -->
 
 <div style="background-image: url(fairwayGreen2.png);" class="mainTopDiv">
 <br><br><br>
 
 <!-- start language version choice -->
-<div>
-        <h7><a style="background-color: white; color: black; float: right; font-size: 12px; margin-right: 8px; padding:3px;"
+<div style="width: 100%; height: 45px ; padding: 2px; position: fixed; z-index: 1;">
+      
+       
+        <h7><a style="border: 1px solid white; background-color: #018FC7; color: white; float: right; font-size: 12px; margin-right: 8px; padding:3px;"
+                        onclick="openNav()">Menu &#9776;</a></h7>
+
+        <h7><a style="border: 1px solid white; background-color: #83C0DF; color: black; float: right; font-size: 12px; margin-right: 8px; padding:3px;"
                         href="FR.html">FR</a></h7>
-        <h7><a style="background-color: lightskyblue; color: white; float: right; font-size: 12px; margin-right: 8px; padding:3px;"
+        <h7><a style="border: 1px solid white; background-color: #B1D0E2; color: black; float: right; font-size: 12px; margin-right: 8px; padding:3px;"
                         href="index.html">EN</a></h7>
+        
 
         <br>
+
 </div>
 <!-- end language version choice -->
 
+<!-- start sideNav -->
+<div id="mySidenav" class="sidenav" style="text-align: left;">
+        <!-- <a style="float: right;" onclick="closeNav()">Close |X|</a> -->
+        <br>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="float: left; text-align: left; font-size: 16px; " href="#section1" onclick="closeNav()">Example Socrecard</a>
+        <br>
+        <a style="float: left; text-align: left; font-size: 16px; " href="#section2" onclick="closeNav()">Course Map Details</a>
+        <a style="float: left; text-align: left; font-size: 16px; " href="#section3" onclick="closeNav()">QR code Details</a>
+        <a style="float: left; text-align: left; font-size: 16px; " href="#section4" onclick="closeNav()">Become a Sponsor</a>
+        <br><br>
+        
+</div>
+<!-- end sidenav -->
 
-<br>
-<div class="digitalScorecardTop">      
+
+
+<br><br><br>
+<div class="digitalScorecardTop" style="z-index: 0;" >      
 DIGITAL SCORECARD
 <br> FOR GOLF COURSE OWNERS
 <br> STREAMLINED SCORECARD MANAGEMENT
@@ -152,10 +164,12 @@ Trial</button>
 </div>
 
 </div>
+<div id="section1"></div>
+
 <br><br>
 
 <div style="border: 1px solid black; margin: 10px 10%; border-radius: 10px;">
-<h4 style="text-align: center; margin:10px 10%;"> Upon your choice of membership subscription <br> or a Free 30-day Trial <br> all the functions of the </h4>
+<h4 style="text-align: center; margin:10px 10%;" > Upon your choice of membership subscription <br> or a Free 30-day Trial <br> all the functions of the </h4>
         <h4 style="text-align: center; font-weight:600; margin:10px 10%;"> SAMPLE SCORECARD BELOW</h4>
         <h4 style="text-align: center; margin:10px 10%;"> will be activated. </h4>
 
@@ -1018,8 +1032,9 @@ Note: Save Scorecard by Taking a Screenshot
 <br>
 </div>
 
-
-<div class="addCourseMap" style=" "> +Your Course Map Here+
+<div id="section2"></div>
+<br>
+<div class="addCourseMap" > +Your Course Map Here+
 <br><br>
 
 
@@ -1031,21 +1046,24 @@ Options include:
 <br>-Modified to show Long, Medium and Short distances.
 </div>
 
-
+<div id="section3"></div>
 <br>
 
 <!-- Start of QR code sharing -->
-<div class="scanQRBox">
-<div>Scan QR code to Open Scorecard </div>
-<h6 class="optionsSection"
-style="text-shadow: black; background: none; color: white;">The golf
-course owner can share the QR code with their golf course patrons and
-players</h6>
+<div class="scanQRBox"  >
+<!-- <div>Scan QR code to Open Scorecard </div> -->
+
 <br><br>
 <div  style="margin: auto; ">
 Custom QR Code <br> will be activated with a <br> Membership <br>
 Subscription
 </div>
+<br><br>
+<h6 class="optionsSection" style="text-shadow: black; background: none; color: white;">The golf
+        course owner can share the QR code with their golf course patrons and
+        players</h6>
+
+        <div id="section4"></div>
 <br>
 
 </div>
@@ -1056,8 +1074,11 @@ Subscription
 </div>
 <!-- end of mainTopnumber -->
 
+
 </div>
 <!-- end of main picture -->
+
+
 
 <!-- start of Sponsor Sign up -->
 <div style="background-color: lightgrey;" >
@@ -1069,7 +1090,7 @@ Subscription
                 <br>
                         <button class="payHereButton" onclick="openSponsorSignUp()" >Sponsor - Sign Up </button>
                 
-                <br><br>
+                <br><br><br><br><br><br>
 
         </div>
 </div>
@@ -1126,6 +1147,13 @@ Subscription
 <p>golfAppycards@gmail.com</p>
 <p>golfAppycards LLC</p>
 <div class="mainLogoFooter"></div>
+<br><br><br><br><br><br>
+
+<p>Designed by:</p>
+<a class="footerLink" style="margin: 0; font-size:12px;" href="http://www.peterking.info" target="_blank" rel="noopener noreferrer">
+        <p>www.peterking.info</p>
+</a>
+<br>
 </div>
 
 
