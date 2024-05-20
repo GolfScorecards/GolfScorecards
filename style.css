@@ -1126,17 +1126,71 @@ label:before {
 }
 
 #mySidenavMenu {
-    z-index: 2;
+    z-index: 5;
 }
 
 #mySidenavLogin {
-    z-index: 3;
+    z-index: 5;
 
 }
 
 #mySidenavSignup {
-    z-index: 3;
+    z-index: 5;
 
+}
+
+/*side nav*/
+
+span {
+    color: white;
+    background-color: #2D2D35;
+    float: right;
+    padding: 5px 20px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.name {
+    float: left;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #2D2D35;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
