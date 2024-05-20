@@ -461,10 +461,6 @@ function showRemaining() {
     document.getElementById('countdown').innerHTML += minutes + 'mins ';
     document.getElementById('countdown').innerHTML += seconds + 'secs';
 
-    document.getElementById('countdownFR').innerHTML = days + 'jours ';
-    document.getElementById('countdownFR').innerHTML += hours + 'hrs ';
-    document.getElementById('countdownFR').innerHTML += minutes + 'mins ';
-    document.getElementById('countdownFR').innerHTML += seconds + 'secs';
 }
 
 timer = setInterval(showRemaining, 1000);
