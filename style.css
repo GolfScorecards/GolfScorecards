@@ -457,14 +457,14 @@ input[type=password] {
     /* box-shadow: 1px 1px 20px #000000; */
     border-radius: 10px;
     margin: 40px 40px;
-    background-color: #78c1f3;
-    color: white;
-    height:40px;
-    padding: 135px 5px 90px 5px;
+    background-color: #93B874;
+    color: black;
+    height:auto;
+    padding: 5px 5px 5px 5px;
     font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    text-shadow: black 1px 0 10px;
+    font-weight: 100;
+    /* font-style: italic; */
+    /* text-shadow: black 1px 0 10px; */
     text-align: center;
 }
 
@@ -545,11 +545,11 @@ input[type=password] {
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    text-shadow: black 1px 0 10px;
+    color: black;
+    /* font-size: 18px; */
+    /* font-weight: 800; */
+    /* font-style: italic; */
+    text-shadow: white 1px 0 10px;
     text-align: center;
 }
 
@@ -1098,16 +1098,14 @@ label:before {
 
 .optionsSection {
         height: auto;
-        width: 40%;
-        background-color: white;
+        width: 90%;
         padding: 5px 5px 5px 5px;
-        margin: auto 30%;
+        margin: auto 5%;
         color: black;
-        font-size: 12px;
+        /* font-size: 12px; */
         /* font-weight: 600; */
-        font-style: italic;
+        /* font-style: italic; */
         /* text-shadow: white 1px 0 10px; */
-        text-align: center;
 }
 
 
