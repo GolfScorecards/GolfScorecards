@@ -502,7 +502,7 @@ function closeSubscribePopUpFreeTrial() {
 
 
 // openGolfClubRanges
-function openGolfClubRanges() {
+function yellowopenGolfClubRanges() {
     document.getElementById("golfClubRanges").style.display = "block";
     console.log("Opened golfClubRanges")
 }
@@ -550,7 +550,7 @@ function refreshGPSrangeFinder() {
 
 
 // duplicate text field to back9 names
-function yellowduplicateName() {
+function duplicateName() {
     $('#golfer_name1').keyup(function () {
         var text = $(this).val();
         console.log(text)
@@ -578,11 +578,12 @@ function yellowduplicateName() {
 
 
 //par summary popup 
-function openNavCookiesPar() {
-    document.getElementById("mySidenavCookiesPar").style.display = "block";
+function yellowopenNavCookiesPar() {
+    document.getElementById("mySidenavCookiesParDiv").style.display = "block";
+    console.log("Opened Par Summary")
 }
 function closeNavCookiesPar() {
-    document.getElementById("mySidenavCookiesPar").style.display = "none";
+    document.getElementById("mySidenavCookiesParDiv").style.display = "none";
     console.log("Closed Par Summary")
 }
 
