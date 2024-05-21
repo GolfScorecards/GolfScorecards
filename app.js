@@ -143,7 +143,7 @@ function closeEditGolferCourseNav() {
 
 // referenced: jsfiddle page http://jsfiddle.net/2u3vjhq9/
 
-this.sumInputs = function () {
+this.yellowsumInputs = function () {
 
     var inputs = document.getElementsByName('row1'),
         result = document.getElementById('total'),
@@ -159,7 +159,7 @@ this.sumInputs = function () {
     result.value = sum;
 }
 
-this.sumInputs2 = function () {
+this.yellowsumInputs2 = function () {
 
     var inputs = document.getElementsByName('row2'),
         result = document.getElementById('total2'),
@@ -175,7 +175,7 @@ this.sumInputs2 = function () {
     result.value = sum;
 }
 
-this.sumInputs3 = function () {
+this.yellowsumInputs3 = function () {
 
     var inputs = document.getElementsByName('row3'),
         result = document.getElementById('total3'),
@@ -191,7 +191,7 @@ this.sumInputs3 = function () {
     result.value = sum;
 }
 
-this.sumInputs4 = function () {
+this.yellowsumInputs4 = function () {
 
     var inputs = document.getElementsByName('row4'),
         result = document.getElementById('total4'),
@@ -207,7 +207,7 @@ this.sumInputs4 = function () {
     result.value = sum;
 }
 
-this.sumInputs5 = function () {
+this.yellowsumInputs5 = function () {
 
     var inputs = document.getElementsByName('row5'),
         result = document.getElementById('total5'),
@@ -223,7 +223,7 @@ this.sumInputs5 = function () {
     result.value = sum;
 }
 
-this.sumInputs6 = function () {
+this.yellowsumInputs6 = function () {
 
     var inputs = document.getElementsByName('row6'),
         result = document.getElementById('total6'),
@@ -239,7 +239,7 @@ this.sumInputs6 = function () {
     result.value = sum;
 }
 
-this.sumInputs7 = function () {
+this.yellowsumInputs7 = function () {
 
     var inputs = document.getElementsByName('row7'),
         result = document.getElementById('total7'),
@@ -255,7 +255,7 @@ this.sumInputs7 = function () {
     result.value = sum;
 }
 
-this.sumInputs8 = function () {
+this.yellowsumInputs8 = function () {
 
     var inputs = document.getElementsByName('row8'),
         result = document.getElementById('total8'),
@@ -273,7 +273,7 @@ this.sumInputs8 = function () {
 
 
 /////////////////////// Start: sumGrandTotal //////////////////
-this.sumGrandTotal = function () {
+this.yellowsumGrandTotal = function () {
 
     var inputs1 = document.getElementsByName('row1'),
         inputs5 = document.getElementsByName('row5'),
@@ -383,7 +383,7 @@ this.sumGrandTotal = function () {
 
 // Sum of rows
 // Referenced: jsfiddle page http://jsfiddle.net/2u3vjhq9/
-function sumAllRows() {
+function yellowsumAllRows() {
     $("input").keyup(function () {
         // $("input").css("background-color", "lightgray");
         sumInputs();
@@ -399,7 +399,7 @@ function sumAllRows() {
     });
 }
 
-function sumGrandTotal() {
+function yellowsumGrandTotal() {
     $("input").keyup(function () {
         // $("input").css("background-color", "lightgray");
         sumInputs();
@@ -550,7 +550,7 @@ function refreshGPSrangeFinder() {
 
 
 // duplicate text field to back9 names
-function duplicateName() {
+function yellowduplicateName() {
     $('#golfer_name1').keyup(function () {
         var text = $(this).val();
         console.log(text)
