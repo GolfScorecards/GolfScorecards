@@ -143,7 +143,7 @@ function closeEditGolferCourseNav() {
 
 // referenced: jsfiddle page http://jsfiddle.net/2u3vjhq9/
 
-this.yellowsumInputs = function () {
+this.sumInputs = function () {
 
     var inputs = document.getElementsByName('row1'),
         result = document.getElementById('total'),
@@ -159,7 +159,7 @@ this.yellowsumInputs = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs2 = function () {
+this.sumInputs2 = function () {
 
     var inputs = document.getElementsByName('row2'),
         result = document.getElementById('total2'),
@@ -175,7 +175,7 @@ this.yellowsumInputs2 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs3 = function () {
+this.sumInputs3 = function () {
 
     var inputs = document.getElementsByName('row3'),
         result = document.getElementById('total3'),
@@ -191,7 +191,7 @@ this.yellowsumInputs3 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs4 = function () {
+this.sumInputs4 = function () {
 
     var inputs = document.getElementsByName('row4'),
         result = document.getElementById('total4'),
@@ -207,7 +207,7 @@ this.yellowsumInputs4 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs5 = function () {
+this.sumInputs5 = function () {
 
     var inputs = document.getElementsByName('row5'),
         result = document.getElementById('total5'),
@@ -223,7 +223,7 @@ this.yellowsumInputs5 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs6 = function () {
+this.sumInputs6 = function () {
 
     var inputs = document.getElementsByName('row6'),
         result = document.getElementById('total6'),
@@ -239,7 +239,7 @@ this.yellowsumInputs6 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs7 = function () {
+this.sumInputs7 = function () {
 
     var inputs = document.getElementsByName('row7'),
         result = document.getElementById('total7'),
@@ -255,7 +255,7 @@ this.yellowsumInputs7 = function () {
     result.value = sum;
 }
 
-this.yellowsumInputs8 = function () {
+this.sumInputs8 = function () {
 
     var inputs = document.getElementsByName('row8'),
         result = document.getElementById('total8'),
@@ -273,7 +273,7 @@ this.yellowsumInputs8 = function () {
 
 
 /////////////////////// Start: sumGrandTotal //////////////////
-this.yellowsumGrandTotal = function () {
+this.sumGrandTotal = function () {
 
     var inputs1 = document.getElementsByName('row1'),
         inputs5 = document.getElementsByName('row5'),
@@ -383,7 +383,7 @@ this.yellowsumGrandTotal = function () {
 
 // Sum of rows
 // Referenced: jsfiddle page http://jsfiddle.net/2u3vjhq9/
-function yellowsumAllRows() {
+function sumAllRows() {
     $("input").keyup(function () {
         // $("input").css("background-color", "lightgray");
         sumInputs();
@@ -399,7 +399,7 @@ function yellowsumAllRows() {
     });
 }
 
-function yellowsumGrandTotal() {
+function sumGrandTotal() {
     $("input").keyup(function () {
         // $("input").css("background-color", "lightgray");
         sumInputs();
@@ -502,7 +502,7 @@ function closeSubscribePopUpFreeTrial() {
 
 
 // openGolfClubRanges
-function yellowopenGolfClubRanges() {
+function openGolfClubRanges() {
     document.getElementById("golfClubRanges").style.display = "block";
     console.log("Opened golfClubRanges")
 }
@@ -578,7 +578,7 @@ function duplicateName() {
 
 
 //par summary popup 
-function yellowopenNavCookiesPar() {
+function openNavCookiesPar() {
     document.getElementById("mySidenavCookiesParDiv").style.display = "block";
     console.log("Opened Par Summary")
 }
