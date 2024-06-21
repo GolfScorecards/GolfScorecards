@@ -23,22 +23,22 @@ body {
 /* https: //www.pexels.com/photo/golf-court-under-blue-sky-14745766/ */
 
 .mainLogo {
-    background-image: url(logo2-Transparent.png);
+    background-image: url(logo4-Transparent.png);
     /* background-image: url(logo3-Transparent.png); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 175px;
-    height: 48px;
-    margin: auto 0px;
+    height: 42px;
+    margin: 20px 0px 10px 10px;
     border-radius: 2px;
 }
 
 .mainLogoFooter {
-        background-image: url(logo2-Transparent.png);
+        background-image: url(logo4-Transparent.png);
         /* background-image: url(logo3-Transparent.png); */
         background-size: cover;
         background-repeat: no-repeat;
-        width: 170px;
+        width: 180px;
         height: 48px;
         margin: auto auto;
         border-radius: 2px;
@@ -541,7 +541,7 @@ input[type=password] {
 .scanQRBox {
     padding: 50px;
     /* background-image: url(SkyImage.png); */
-    background-image: url(fairwayGreen.png);
+    /* background-image: url(fairwayGreen.png); */
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
