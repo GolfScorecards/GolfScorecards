@@ -1552,6 +1552,16 @@ footer {
     margin: 20px auto;
     border-radius: 8px;
 }
+.QRcode1 {
+    display: block;
+    background-image: url(QRcodeExampleCourse.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 210px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
 
 .QRcodeSmall {
     background-image: url(QR-code-to-Golfer-Scorecards2.png);
