@@ -129,8 +129,7 @@ margin-left:10px;
 font-size: 12px;
 font-weight: 200;
 text-shadow: black 1px 0 10px; 
-"> Summer Price
-</div>
+"> Price </div>
 
 
 <div style="    text-align:left; 
@@ -147,6 +146,11 @@ text-shadow: black 1px 0 10px;
 <div id='alrt' style="font-weight: 'bold; display:none'"></div>
 
 
+<button onclick="CloseSideNavLogin()">
+</button>
+
+
+
 <div class="digitalScorecardFront">
 <div>
 <button href="javascript:void(0)"
@@ -161,6 +165,11 @@ style="width: 65%;"
 onclick="openSubscribePopUpFreeTrial()"> Free 30-Day
 Trial</button>
 </div>
+
+<!-- <button onclick="openSideNavLogin()"
+        class="IndexScorecardsubmitAddBtnLogo"
+        style="width: 65%;">
+</button> -->
 
 
 <div id="section1"></div>
@@ -1100,63 +1109,8 @@ style="width: 30%; font-size: 12px; margin:5px auto 0px; display: block; text-al
 <!-- end of main picture -->
 
 
-<!-- Start of Phone Lanyards Section  -->
-<!-- <div id="section8"></div>
-<div style="height: 700px; background-color: lightgrey; ">
-        <div style="text-align: left; width: 70%; margin: 0px auto; padding:100px 0px;">
-                <div style="  padding:10px 10px; border-radius: 10px; border: 1px solid black;">
-                        <br>
-                        <div style=" align-items: center; font-size: 16px; font-weight: 600;"> ACCESSORIES</div>
-                        <br>
-                        <div style="text-align: left;">
 
 
-                                NEW PRODUCT <br>
-                                PRE-ORDER<br><br>
-                                RESERVE YOUR <br>QUANTITY NOW <br>     
-                                <br>
-                                <div style="text-decoration: underline;">Phone Lanyards</div>
-
-                                <br>
-                                Lanyards help some golfers hold their phones who may use the digital scorecards. Great
-                                re-sale item in your golf course pro-shop. <br>
-                                <br>
-                                <a href="">
-                                <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn" >Pre-Order Now</button></a>
-
-
-                        </div>
-                        <br>
-                </div>
-                <br><br><br><br><br><br>
-        </div>
-</div> -->
-<!-- End of Phone Lanyards Section -->
-
-
-
-
-<!-- Start of OLYMPIC section  -->
-<!-- <div id="section5"></div>
-<div style="background-image: url(image1.png); background-repeat: no-repeat;  background-size: cover;">
-<div style="height: 400px; ">
-<div style="text-align: left; width: 70%; margin: 0px auto; padding:100px 0px;">
-<div style="  padding:30px 30px; border-radius: 10px; border: 1px solid antiquewhite; background-color: antiquewhite;">
-        <br>    
-<div style=" align-items: center; font-size: 16px; font-weight: 600;"> COUNTDOWN TO START OF THE OLYMPICS <br><br>
-Events: Olympic Golf</div>
-<br>
-<div style="font-size: 18px;" id="countdown"></div>
-<div style="font-size: 18px;" id="countdown"></div>
-<div style="font-size: 18px;"  id="countdown"></div>
-<div style="font-size: 18px;"  id="countdown"></div>
-<br>
-</div>
-<br><br><br><br><br><br>
-</div>
-</div>
-</div> -->
-<!-- End olympic countdown days clock -->
 
 
 <!-- Start of GOLF Charities -->
@@ -1192,36 +1146,7 @@ Events: Olympic Golf</div>
         </div>
 </div>
 </div>
-<!-- End of Charities section  -->
-<!-- Start of History Section  -->
-<!-- <div id="section9"></div>
-<div style="height: 500px; background-color: lightgrey; ">
-        <div style="text-align: left; width: 70%; margin: 0px auto; padding:100px 0px;">
-                <div style="  padding:10px 10px; border-radius: 10px; border: 1px solid black;">
-                        <br>
-                        <div style=" align-items: center; font-size: 16px; font-weight: 600;">HISTORY OF GOLF: "FIRST RULES"</div>
 
-                        <div style="text-align: left;">
-                                <br>
-
-                                "In 1744, the Honorable Company of Edinburgh Golfers wrote down the first rules of the game, known as the Thirteen
-                                Articles, for their tournament at the Leith Links in Edinburgh. Over the next 100 years, those 13 rules were adopted by
-                                more than 30 clubs." <br>
-                                <br>
-                                <a class="footerLink" style="margin: 0; font-size:12px; padding: 0 0; text-align: left;"
-                                        href="https://www.history.com/news/who-invented-golf-origins" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <p>Source: History.com</p>
-                                </a>
-
-
-                        </div>
-                        <br>
-                </div>
-                <br><br><br><br><br><br>
-        </div>
-</div> -->
-<!-- End of History Section -->
 
 <!-- start of Sponsor Sign up -->
 <div id="section4"></div>
@@ -1427,6 +1352,31 @@ rel="noopener noreferrer">View Privacy Policy</a>
 <div class="termsPaymentPopup">
 <br>(2) PAY $999/year subscription
 </div>
+ 
+<!-- start of paypal link button -->
+<!-- <div id="paypal-button-container-P-47L99137CD751035EM3UFCCA"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AfXIcqXuHBqMARZBAnm35KPP0nJMcdMYiILNhcs4EgR_MAhaLxPS7WwvQV7PHehOyFhsiPGzBdTSYFTR&vault=true&intent=subscription"
+        data-sdk-integration-source="button-factory"></script>
+<script>
+        paypal.Buttons({
+                style: {
+                        shape: 'pill',
+                        color: 'gold',
+                        layout: 'vertical',
+                        label: 'subscribe'
+                },
+                createSubscription: function (data, actions) {
+                        return actions.subscription.create({
+                                /* Creates the subscription */
+                                plan_id: 'P-47L99137CD751035EM3UFCCA'
+                        });
+                },
+                onApprove: function (data, actions) {
+                        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                }
+        }).render('#paypal-button-container-P-47L99137CD751035EM3UFCCA'); // Renders the PayPal button
+</script> -->
+<!-- end of paypal link button -->
 
 <a class="paymentLink"
 href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-288fd4c666234d38a68250b715acedd93423fcb37761458b8ea1363dd51da4d927ea5e4ef80640419b3c81afdc8cdc94?locale=EN_US"
