@@ -74,8 +74,8 @@
                                     href="FR.html">FR</a></h7>
                             <h7><a style="border: 1px solid white; background-color: #B1D0E2; color: black; float: right; font-size: 12px; margin: 12px 2px; padding:3px;  "
                                     href="index.html">EN</a></h7>
-                            <h7><a style="border: 1px solid white; background-color: #B1D0E2; color: yellow; float: right; font-size: 16px; margin: 12px 50px 8px 2px; padding:3px 10px; font-weight: 800;  "
-                                    href="index.html">DISC GOLF</a></h7>
+                            <h7><a style="border: 1px solid white; background-color: #d9e0bb; color: black; float: right; font-size: 12px; margin: 12px 2px; padding:3px;  "
+                                    href="DiscGolf.html">DISC GOLF</a></h7>
 
                             <!-- <h7><a style="border: 1px solid white; background-color: #B1D0E2; color: black; float: right; font-size: 18px; margin: 12px 60px; padding:3px;  "
                                     href="DiscGolf.html"> DISC GOLF</a></h7> -->
@@ -92,10 +92,13 @@
                     <div id="mySidenav" class="sidenav" style="text-align: left;">
                         <!-- <a style="float: right;" onclick="closeNav()">Close |X|</a> -->
                         <br>
-
-                        <a style="float: left; text-align: left; font-size: 16px; " href="#section6"
-                            onclick="closeNav()">Subscribe</a>
+                        <!-- <a style="float: left; text-align: left; font-size: 16px; " href="#section6"
+                            onclick="closeNav()">Subscribe</a> -->
                         <br>
+                        <a style="float: left; text-align: left; font-size: 16px; " href="index.html" onclick="closeNav()">--Golf
+                            Scorecards</a>
+                        <a style="float: left; text-align: left; font-size: 16px; " href="DiscGolf.html" onclick="closeNav()">--Disc Golf
+                            Scorecards</a>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a style="float: left; text-align: left; font-size: 16px; " href="#section1"
                             onclick="closeNav()">Sample Socrecard</a>
@@ -106,13 +109,18 @@
                             onclick="closeNav()">QR code Details</a>
                         <a style="float: left; text-align: left; font-size: 16px; " href="#section4"
                             onclick="closeNav()">Become a Sponsor</a>
-                        <!-- <a style="float: left; text-align: left; font-size: 16px; " href="#section5"
-                            onclick="closeNav()">Countdown to start of the Olympics</a> -->
+                        
                         <a style="float: left; text-align: left; font-size: 16px; " href="#section7"
                             onclick="closeNav()">Support Golf Charities</a>
                         <a style="float: left; text-align: left; font-size: 16px; " href="#section8"
                             onclick="closeNav()">About Us</a>
-
+                            <br><br>
+                        <a style="float: left; text-align: left; font-size: 16px; width: 150px; " href="#section5"
+                        onclick="closeNav()">Login</a>
+                        <a style="float: left; text-align: left; font-size: 16px; " href="#section5" onclick="closeNav(), openSubscribePopUp()">Sign Up - Subscribe</a>
+                        <br>
+                        
+                        
 
                         <br><br>
                     </div>
@@ -1383,27 +1391,27 @@
 
                         <div class="subscriptionPopUpWindow">
 
-                            <h2 style="margin:0%; text-align: center;">Subscribe Here</h2>
+                            <h2 style="margin:0%; text-align: center;">Sign up - Subscribe Here</h2>
                             <br>
                             
                             
                             <br>
                             <div id="surveyMonkey" class="termsPaymentPopup">
-                                <!-- <div>(1) EMAIL your logo, course map, par, yards, along with the name of contact and the Disc Golf course mailing address to: </div>
-<div class="emailLinkBlue">golfAppycards@gmail.com</div> -->
+                                <!-- <!-- <div>(1) EMAIL your logo, course map, par, yards, along with the name of contact and the Disc Golf course mailing address to: </div> -->
+<!-- <div class="emailLinkBlue">golfAppycards@gmail.com</div> -->
                                 <!-- start of survey monkey form -->
-                                <!-- <div>
+                                <div>
                                     <script>(function (t, e, s, n) { var o, a, c; t.SMCX = t.SMCX || [], e.getElementById(n) || (o = e.getElementsByTagName(s), a = o[o.length - 1], c = e.createElement(s), c.type = "text/javascript", c.async = !0, c.id = n, c.src = "https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd05c70OMp0CqxZUOdidqd9Cs1au2MgAgQcpKynSHx5j1.js", a.parentNode.insertBefore(c, a)) })(window, document, "script", "smcx-sdk");</script>
-                                </div> -->
+                                </div>
                                 <!-- end of surveymonkey form -->
                 </div>
-                    <div id="uploadPhoto" class="IndexScorecardsubmitAddBtn"
-                        style="color:white; background-color:#1d6b93; width: 70%; font-size: 30px; margin:5px auto 0px; display: block; text-align: center;"> <br>Upload Photo<br> of Scorecard <br> DISC GOLF <br>Here
+                    <!-- <div id="uploadPhoto" class="IndexScorecardsubmitAddBtn"
+                        style="color:white; background-color:#1d6b93; width: 70%; font-size: 30px; margin:5px auto 0px; padding: 10px 20px 60px 20px; display: block; text-align: center;"> <br>Upload Photo<br> of Scorecard <br> DISC GOLF <br>Here
                         <br>
                     <br>
                         <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Choose File</button>
                     <br>
-                        <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Add/Edit GPS coordinates</button>
+                        <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit Par</button>
 
                     <input placeholder="Hole 1">
                     <input placeholder="Hole 2">
@@ -1425,7 +1433,7 @@
                     <input placeholder="Hole 18">
                     <br><br>
 
-                    <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Add/Edit Par
+                    <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit GPS coordinates
                         </button>
                     
                     <input placeholder="Hole 1">
@@ -1448,7 +1456,7 @@
                     <input placeholder="Hole 18">
                         <br><br>
                         
-                <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Add/Edit Long Yardage
+                <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit Long Yardage
                 </button>
                 
                 <input placeholder="Hole 1">
@@ -1471,7 +1479,7 @@
                 <input placeholder="Hole 18">
                     <br><br>
                     
-                    <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Add/Edit Medium Yardage
+                    <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit Medium Yardage
                     </button>
                     
                     <input placeholder="Hole 1">
@@ -1494,7 +1502,7 @@
                     <input placeholder="Hole 18">
                         <br><br>
                         
-                        <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Add/Edit Short Yardage
+                        <button style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit Short Yardage
                         </button>
                 
                 <input placeholder="Hole 1">
@@ -1516,34 +1524,47 @@
                 <input placeholder="Hole 17">
                 <input placeholder="Hole 18">
                     <br><br>
-               <h5> Enter Info for Account <br>Sign up </h5>
-               <h6 style="margin: 0 0;">Account info </h6>
-                    <input placeholder="Golf Course Name"> <br>
-                    <input placeholder="Last Name"><br>
-                    <input placeholder="First Name">
-                    <br>
-                    <input placeholder="Email address">
-                    <br>
-                    <input placeholder="Street Address"> <br>
-                    <input placeholder="Street Address 2">
-                    <br><br>
-                                    <button onclick=" savedInfo(), savedInfo1()" style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">SAVE & PAY</button>
-                                    <br>
+               <h5> Enter Account Info <br>Sign up </h5>
+            <button style=" width: 40%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn">Edit Account
+                Info
+            </button>
+            <br><br>
+        <input style="margin:3px 3px;" placeholder="Golf Course Name">
+        <br>
+        <input style="margin:3px 3px;" placeholder="Last Name">
+        <br>
+        <input style="margin:3px 3px;" placeholder="First Name">
+        <br>
+        <input style="margin:3px 3px;" placeholder="Email address">
+        <br>
+        <input style="margin:3px 3px;" placeholder="Street Address"> <br>
+        <input style="margin:3px 3px;" placeholder="Street Address 2"> <br>
+        <input style="margin:3px 3px;" placeholder="Create Username">
+        <br>
+        <input style="margin:3px 3px;" placeholder="Create Password">
+        <br>
+        <input style="margin:3px 3px;" placeholder="Retype Password">
+        <br><br>
+
+            
+                        <button onclick=" savedInfo(), savedInfo1()" style=" width: 70%;font-size: 12px; background-color: grey;" class="IndexScorecardsubmitAddBtn"  >SAVE SCORECARD</button>
+                 -->
+                                    <!-- <br>
                             <div style="display: none;" id="savedForUser">
                                 <br>
                                     <div style="font-size: 16px;">  Saved  Scorecard For </div>
                                     <div style="font-size: 14px; text-align: center;">
-                                <div> <% username %> </div> 
-                                <div><% startDate ></div>
-                                <div><% endDate ></div> 
+                                        <div> <% username > </div> 
+                                        <div><% startDate ></div>
+                                        <div><% endDate ></div> 
                                     <br><br>
                                     </div>
-                                </div>
+                                </div> -->
                             
-                                <div  id="paymentBox" style=" display: none; width: 80%; height: auto; text-align: center; background-color: white; color:black; border-radius: 30px; width: 80%; margin: 20px auto 0px"> 
+                                <div  id="paymentBox" style=" display: block; width: 80%; height: auto; text-align: center; background-color: white; color:black; border-radius: 30px; width: 80%; margin: 20px auto 0px"> 
                                     <br>
                             
-                                <!-- <input style="font-size: 18px;" type="Name" placeholder="Disc Golf Course Name">
+                                <!-- <input style="padding:3px 3px;" style="font-size: 18px;" type="Name" placeholder="Disc Golf Course Name">
                                   <br>
                                 <input style="font-size: 18px;" type="Name" placeholder="Address">
                                         <br>
@@ -1613,6 +1634,7 @@
                             <br>
 
                         </div>
+                        <div id="section10"></div>
 
                         <!-- <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
                             onclick="closeSubscribePopUp()">Done</button> -->
