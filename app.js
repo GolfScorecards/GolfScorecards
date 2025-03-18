@@ -684,9 +684,9 @@ function duplicateNamePar() {
 // Links to resources
 
 //Location distance example - from jsfiddle.com with lat lon distance calculation helpful for the golf course distance in yards. Example of css, html, js, very helpful for golf course distances in yardage, distance from the tee to the green, or anywhere on golf course.
+//https://jsfiddle.net/vitorbritto/s7btq7xj/
 
 //google also had google docs for example of API with distance map plug in. Next time use Distance() plug in with with google maps from google how to videos with maps API docs. very helpful.
-//https://jsfiddle.net/vitorbritto/s7btq7xj/
 
 //heroku error solution:
 // https://stackoverflow.com/questions/5450930/heroku-postgres-error-pgerror-error-relation-organizations-does-not-exist
