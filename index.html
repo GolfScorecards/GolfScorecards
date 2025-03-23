@@ -152,8 +152,8 @@ text-shadow: black 1px 0 10px;
 <div id='alrt' style="font-weight: 'bold; display:none'"></div>
 
 
-<button onclick="CloseSideNavLogin()">
-</button>
+<!-- <button onclick="CloseSideNavLogin()">
+</button> -->
 
 
 
@@ -164,12 +164,12 @@ class="IndexScorecardsubmitAddBtnLogo"
 style="width: 65%;" onclick="openSubscribePopUp()">
 Subscribe & Pay</button>
 </div>
+
 <div>
 <button href="javascript:void(0)"
 class="IndexScorecardsubmitAddBtnLogo"
-style="width: 65%;"
-onclick="openSubscribePopUpFreeTrial()"> Free 30-Day
-Trial</button>
+style="width: 65%;" onclick="openSubscribePopUpFreeTrial()">
+ Free 30-Day Trial</button>
 </div>
 
 <!-- <button onclick="openSideNavLogin()"
@@ -1346,7 +1346,7 @@ rel="noopener noreferrer">View Privacy Policy</a>
 
 <h3 style="margin:0%">Subscribe Here</h3>
 <br>
-<div id="EnterScorecardData" class="EnterScorecardData" >
+<div id="EnterScorecardDataSubscriber" class="EnterScorecardData" >
 
 <!-- <div>(1) EMAIL your logo, course map, par, yards, along with the name of contact and the golf course mailing address to: </div>
 <div class="emailLinkBlue">golfAppycards@gmail.com</div> -->
@@ -1362,38 +1362,9 @@ rel="noopener noreferrer">View Privacy Policy</a>
 <div id="paymentBox"
         style=" display: block; width: 80%; height: auto; text-align: center; background-color: white; color:black; border-radius: 30px; width: 95%; margin: 20px auto 0px;">
 <div class="termsPaymentPopup">
-<br>(1) PAY $999/year subscription
+<!-- <br>(1) PAY $999/year subscription -->
 </div>
  
-<!-- start of paypal link button -->
- <!-- <div id="paymentLinkDiv" style="display: block; width: 60%;  margin: 5px auto; padding: 10px 10px">
-<div id="paypal-button-container-P-47L99137CD751035EM3UFCCA" ></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AfXIcqXuHBqMARZBAnm35KPP0nJMcdMYiILNhcs4EgR_MAhaLxPS7WwvQV7PHehOyFhsiPGzBdTSYFTR&vault=true&intent=subscription"
-        data-sdk-integration-source="button-factory">
-
-
-</script>
-<script>
-        paypal.Buttons({
-                style: {
-                        shape: 'pill',
-                        color: 'gold',
-                        layout: 'vertical',
-                        label: 'subscribe'
-                },
-                createSubscription: function (data, actions) {
-                        return actions.subscription.create({
-                                /* Creates the subscription */
-                                plan_id: 'P-47L99137CD751035EM3UFCCA'
-                        });
-                },
-                onApprove: function (data, actions) {
-                        alert(data.subscriptionID + "Enter Scorecard Data"); // You can add optional success message for the subscriber here
-                
-                }
-        }).render('#paypal-button-container-P-47L99137CD751035EM3UFCCA'); // Renders the PayPal button
-</script> -->
-<!-- end of paypal link button -->
 </div>
 <!-- end of button formatting -->
 
@@ -1408,12 +1379,12 @@ target="_blank" rel="noopener noreferrer">
 </a>
 
 
-<div class="paymentOptions" style="display: none;"></div>
+<!-- <div class="paymentOptions" style="display: none;"></div> -->
 
 
 
 <div class="bottomOfPopUp">
-<div class="detailsPaymentPopup">
+<div class="detailsPaymentPopup" style="display: block;">
         <br>
 NOTE two pages will appear, ensure your name and email address match those used for the credit card payment for prompt delivery.
 
@@ -1445,71 +1416,72 @@ onclick="closeSubscribePopUp()">Done</button>
 </div>
 </div>
 </div>
+</div>
 <!-- End of Subscribe popup -->
 
 <!-- Start of Free Trial -->
-<div class="displaySquaresPopUp">
-<div id="logoSubscribeButton1FreeTrial" class="logoSubscribePopUp">
-
-<div class="closeXButton" onclick="closeSubscribePopUpFreeTrial()"></div>
-<div class="bottomCookiePolicyPopup">
-<div class="topOfPopUp">
-<div class="subscriptionPopUpWindow">
-
-<h3 style="margin:0%">Free 30 Day Trial - Sign Up</h3>
-<br>
-<div class="termsPaymentPopup">
-
-<!-- start of survey money form -->
-<div>
-<!-- <script>(function (t, e, s, n) { var o, a, c; t.SMCX = t.SMCX || [], e.getElementById(n) || (o = e.getElementsByTagName(s), a = o[o.length - 1], c = e.createElement(s), c.type = "text/javascript", c.async = !0, c.id = n, c.src = "https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd05c70OMp0CqxZUOdidqd9Cs1au2MgAgQcpKynSHx5j1.js", a.parentNode.insertBefore(c, a)) })(window, document, "script", "smcx-sdk");</script>
-<a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your
-own user feedback survey </a> -->
-
-
-</div>
-<!-- end of surveymonkey form -->
-</div>
-
-</div>
-</div>
-
-<div class="bottomOfPopUp">
-<div class="termsPaymentPopup">
-
-RECEIVE a digital scorecard featuring your logo, par,
-yards, course map, GPS
-range finder, and a shareable QR code for your
-golfers, to your email.
-<br> <br>
-EXPIRES on the 30th day after receiving the digital
-scorecard.
-<br><br>
-PAY before free trial expiration to avoid losing your
-digital scorecard and our premium features.
-<br><br>
-ALLOW 1-3 days for processing, after sign up form below.
-<br> <br>
-</div>
-
-
-
-<a class="paymentLink" href="FreeTrialSignUp.html"
-target="_blank" rel="noopener noreferrer">
-<button href="javascript:void(0)"
-class="IndexScorecardsubmitAddBtn" style="font-size: 16px;"
-onclick="closeSubscribePopUpFreeTrial()">I Agree
-<br> - <br>Continue to Sign Up Form</button>
-</a>
-
-
-</div>
-
-<!-- end of topOfPopUp -->
-
-</div>
-</div>
-</div>
+        <div class="displaySquaresPopUp" style="display: block;">
+                <div id="logoSubscribeButton1FreeTrial" class="logoSubscribePopUp">
+        
+                        <div class="closeXButton" onclick="closeSubscribePopUpFreeTrial()"></div>
+                        <div class="bottomCookiePolicyPopup">
+                                <div class="topOfPopUp">
+                                        <div class="subscriptionPopUpWindow">
+        
+                                                <h3 style="margin:0%">Free 30 Day Trial - Sign Up</h3>
+                                                <br>
+                                                <div class="termsPaymentPopup">
+        
+                                                        <!-- start of survey money form -->
+                                                        <div>
+                                                                <!-- <script>(function (t, e, s, n) { var o, a, c; t.SMCX = t.SMCX || [], e.getElementById(n) || (o = e.getElementsByTagName(s), a = o[o.length - 1], c = e.createElement(s), c.type = "text/javascript", c.async = !0, c.id = n, c.src = "https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd05c70OMp0CqxZUOdidqd9Cs1au2MgAgQcpKynSHx5j1.js", a.parentNode.insertBefore(c, a)) })(window, document, "script", "smcx-sdk");</script>
+                                            <a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your
+                                            own user feedback survey </a> -->
+        
+        
+                                                        </div>
+                                                        <!-- end of surveymonkey form -->
+                                                </div>
+        
+                                        </div>
+                                </div>
+        
+                                <div style="color: black;" class="bottomOfPopUp">
+                                        <div class="termsPaymentPopup" style="color: black;">
+        
+                                                RECEIVE a digital scorecard featuring your logo, par,
+                                                yards, course map, GPS
+                                                range finder, and a shareable QR code for your
+                                                golfers, to your email.
+                                                <br> <br>
+                                                EXPIRES on the 30th day after receiving the digital
+                                                scorecard.
+                                                <br><br>
+                                                PAY before free trial expiration to avoid losing your
+                                                digital scorecard and our premium features.
+                                                <br><br>
+                                                ALLOW 1-3 days for processing, after sign up form below.
+                                                <br> <br>
+                                        </div>
+        
+        
+        
+                                        <a class="paymentLink" href="FreeTrialSignUp.html" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <button href="javascript:void(0)" class="IndexScorecardsubmitAddBtn"
+                                                        style="font-size: 16px;" onclick="closeSubscribePopUpFreeTrial()">I
+                                                        Agree
+                                                        <br> - <br>Continue to Sign Up Form</button>
+                                        </a>
+        
+        
+                                </div>
+        
+                                <!-- end of topOfPopUp -->
+        
+                        </div>
+                </div>
+        </div>
 <!-- End of Free Trial -->
 
 

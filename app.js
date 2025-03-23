@@ -435,12 +435,9 @@ function resetScorecard() {
 }
 
 function promptEnterScorecardData() {
-    document.getElementById("EnterScorecardData").style.display = "block";
-    // document.getElementById("paymentLinkDiv").style.display = "block";
-    // document.getElementById("paymentOptions").style.display = "none";
+    document.getElementById("EnterScorecardDataSubscriber").style.display = "block";
     document.getElementById("payHereButton").style.display = "none";
    
-    
 } 
 
 // bycrpt for login
@@ -503,21 +500,33 @@ function closeNavCookies() {
 // logoSubscribeButton
 function openSubscribePopUp() {
     document.getElementById("logoSubscribeButton1").style.display = "block";
-    console.log("Opened logoSubscribePopUp")
+    console.log("Opened logoSubscribePopUp");
 }
 function closeSubscribePopUp() {
     document.getElementById("logoSubscribeButton1").style.display = "none";
-    console.log("Closed logoSubscribePopUp")
+    console.log("Closed logoSubscribePopUp");
 }
 
 // freeTrialButton
 function openSubscribePopUpFreeTrial() {
     document.getElementById("logoSubscribeButton1FreeTrial").style.display = "block";
-    console.log("Opened logoSubscribePopUpFreeTrial")
+    console.log("Opened logoSubscribePopUpFreeTrialDisc");
 }
+
 function closeSubscribePopUpFreeTrial() {
     document.getElementById("logoSubscribeButton1FreeTrial").style.display = "none";
-    console.log("Closed logoSubscribePopUpFreeTrial")
+    console.log("Closed logoSubscribePopUpFreeTrialDisc");
+}
+
+// freeTrialButtonDisc
+function openSubscribePopUpFreeTrialDisc() {
+    document.getElementById("logoSubscribeButton1FreeTrialDisc").style.display = "block";
+    console.log("Opened logoSubscribePopUpFreeTrialDisc");
+}
+
+function closeSubscribePopUpFreeTrialDisc() {
+    document.getElementById("logoSubscribeButton1FreeTrialDisc").style.display = "none";
+    console.log("Closed logoSubscribePopUpFreeTrialDisc");
 }
 
 

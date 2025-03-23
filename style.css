@@ -94,7 +94,7 @@ main {
 }
 
 .payHereButton {
-        /* display: block; */
+        display: block;
         width: 90%;
         height: auto;
         padding: 10px 20px;
@@ -389,12 +389,18 @@ a {
 }
 
 .termsPaymentPopup {
+    display: block;
+    margin: 10px 1%;
+    font-size: 16px;
+}
+
+#EnterScorecardData {
     display: none;
     margin: 10px 1%;
     font-size: 16px;
 }
 
-.EnterScorecardData {
+#EnterScorecardDataSubscriber {
     display: none;
     margin: 10px 1%;
     font-size: 16px;
@@ -1016,8 +1022,8 @@ label:before {
     display: fixed;
 }
 
-.displaySquaresPopUp {
-    display: fixed;
+#displaySquaresPopUp {
+    display: block;
 }
 
 .displaySquaresPar {
@@ -1258,7 +1264,7 @@ a {
 
 
 .logoSubscribePopUp {
-        /* display: none; */
+        display: block;
         text-align: left;
         height: 70%;
         width: 85%;
@@ -1295,6 +1301,25 @@ a {
 }
 
 #logoSubscribeButton1FreeTrial {
+    display: none;
+    height: 88%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 10%;
+    bottom: 10%;
+    /* right: 0; */
+    background-color: #DFDFDF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: left;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 1px;
+    max-width: 650px;
+}
+
+#logoSubscribeButton1FreeTrialDisc {
     display: none;
     height: 88%;
     width: 100%;
