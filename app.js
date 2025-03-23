@@ -17,12 +17,12 @@ function closeNavLogin() {
     document.getElementById("mySidenavLogin").style.width = "0";
 }
 
-
 function openMenuNav() {
-    document.getElementById("mySidenavMenu").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "250px";
 }
 function closeMenuNav() {
-    document.getElementById("mySidenavMenu").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0px";
+    // document.getElementById('Course')
 }
 
 function openWeatherNav() {
@@ -50,9 +50,17 @@ function closeGolfAI() {
 
 }
 
+// function openEntryForm() {
+//     document.getElementById("surveyMonkey").style.width = "962px";
+// }
+// function closeEntryForm() {
+//     document.getElementById("surveyMonkey").style.width = "0px";
+// }
+
 function openNav() {
     "use strict";
     document.getElementById("mySidenav").style.width = "250px";
+    console.log( "opened nav")
 }
 
 function closeNav() {
@@ -87,7 +95,6 @@ function closeEditGolferCourseNav() {
 
 
 // Start Par Sum ============================
-
 
     var parHoleNum0 = parseInt(document.getElementsByName('parHole')[0].innerText);
     var parHoleNum1 = parseInt(document.getElementsByName('parHole')[1].innerText);
@@ -292,13 +299,13 @@ this.sumGrandTotal = function () {
         result4 = document.getElementById('grandtotal8'),
 
         sum1 = 0;
-    sum2 = 0;
-    sum3 = 0;
-    sum4 = 0;
-    sum5 = 0;
-    sum6 = 0;
-    sum7 = 0;
-    sum8 = 0;
+        sum2 = 0;
+        sum3 = 0;
+        sum4 = 0;
+        sum5 = 0;
+        sum6 = 0;
+        sum7 = 0;
+        sum8 = 0;
 
     for (var i = 0; i < inputs1.length; i++) {
         var ip = inputs1[i];
@@ -369,10 +376,6 @@ this.sumGrandTotal = function () {
     result3.value = sum3 + sum7;
     result4.value = sum4 + sum8;
 
-    // console.log("this is the total :" + result1.value)
-    // console.log("this is the total :" + result2.value)
-    // console.log("this is the total :" + result3.value)
-    // console.log("this is the total :" + result4.value)
 }
 ////////////////// End : sumGrandTotal ///////////////////////
 
@@ -431,6 +434,23 @@ function resetScorecard() {
 
 }
 
+function promptEnterScorecardData() {
+    document.getElementById("EnterScorecardData").style.display = "block";
+    // document.getElementById("paymentLinkDiv").style.display = "block";
+    // document.getElementById("paymentOptions").style.display = "none";
+    document.getElementById("payHereButton").style.display = "none";
+   
+    
+} 
+
+// bycrpt for login
+// login
+// password
+
+
+
+
+
 // olympic day countdown
 
 var end = new Date('07/26/2024 12:00 AM');
@@ -447,7 +467,7 @@ function showRemaining() {
     if (distance < 0) {
 
         clearInterval(timer);
-        document.getElementById('countdown').innerHTML = '';
+        document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
         return;
     }
@@ -576,6 +596,17 @@ function duplicateName() {
     });
 }
 
+function savedInfo() {
+    document.getElementById("paymentBox").style.display = "block";
+    console.log("Opened Payment Info")
+}
+
+function savedInfo1() {
+    document.getElementById("savedForUser").style.display = "block";
+    console.log("Opened Payment Info")
+}
+
+
 
 //par summary popup 
 function openNavCookiesPar() {
@@ -676,6 +707,32 @@ function duplicateNamePar() {
 // End of par total update summary
 
 
+// Auth0 for login
+const login = async () => {
+    await auth0.loginWithRedirect({
+        redirect_uri: window.location.origin
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -684,9 +741,9 @@ function duplicateNamePar() {
 // Links to resources
 
 //Location distance example - from jsfiddle.com with lat lon distance calculation helpful for the golf course distance in yards. Example of css, html, js, very helpful for golf course distances in yardage, distance from the tee to the green, or anywhere on golf course.
-//-- notes: google also had google docs for example of API with distance map plug in. Next time use Distance() plug in with with google maps from google how to videos with maps API docs. notes: very helpful.
-//https://jsfiddle.net/vitorbritto/s7btq7xj/
 
+//google also had google docs for example of API with distance map plug in. Next time use Distance() plug in with with google maps from google how to videos with maps API docs. very helpful.
+//https://jsfiddle.net/vitorbritto/s7btq7xj/
 
 //heroku error solution:
 // https://stackoverflow.com/questions/5450930/heroku-postgres-error-pgerror-error-relation-organizations-does-not-exist

@@ -94,6 +94,7 @@ main {
 }
 
 .payHereButton {
+        /* display: block; */
         width: 90%;
         height: auto;
         padding: 10px 20px;
@@ -388,6 +389,13 @@ a {
 }
 
 .termsPaymentPopup {
+    display: none;
+    margin: 10px 1%;
+    font-size: 16px;
+}
+
+.EnterScorecardData {
+    display: none;
     margin: 10px 1%;
     font-size: 16px;
 }
